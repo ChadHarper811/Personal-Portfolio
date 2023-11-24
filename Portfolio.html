@@ -1,10 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/2564131498.js" crossorigin="anonymous"></script>
+    <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+            rel="stylesheet"
+    />
 </head>
 <body>
+<!-- START NAV -->
 
-</body>
+<nav id="navbar" class="nav">
+    <ul class="nav-list">
+        <li>
+            <a href="#welcome-section">Home</a>
+        </li>
+        <li>
+            <a href="#about-me">About</a>
+        </li>
+        <li>
+            <a href="#projects">Work</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- END NAV -->
+
+<!-- START WELCOME SECTION -->
+
+<section id="welcome-section" class="welcome-section">
+    <h1>Welcome to my page, I am Chad Harper</h1>
+    <p class="welcome-section-p">an up-and-coming web developer</p>
+</section>
+
+<!-- END WELCOME SECTION -->
+
+<!-- START ABOUT ME SECTION -->
+<section>
+    <h1 id="about-me" class="about-me">A little info about my journey so far.</h1>
+    <p class="about-me-p">The first time i ever started anything related to coding was in highscool. I </p>
+</section>
+<!--END ABOUT ME SECTION-->
+
+<!-- START PROJECTS SECTION -->
+
+<section id="projects" class="projects-section">
+    <h2 class="projects-section-header">These are some of my projects</h2>
+
+    <div class="projects-grid">
+        <a
+                href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                    alt="project"
+            />
+            <p class="project-title">
+                <span class="code">&lt;</span>
+                Tribute Page
+                <span class="code">&#47;&gt;</span>
+            </p>
+        </a>
+        <a
+                href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                    alt="project"
+            />
+            <p class="project-title">
+                <span class="code">&lt;</span>
+                Random Quote Machine
+                <span class="code">&#47;&gt;</span>
+            </p>
+        </a>
+        <a
+                href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                    alt="project"
+            />
+            <p class="project-title">
+                <span class="code">&lt;</span>
+                JavaScript Calculator
+                <span class="code">&#47;&gt;</span>
+            </p>
+        </a>
+        <a
+                href="https://codepen.io/freeCodeCamp/full/mVEJag"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                    alt="project"
+            />
+            <p class="project-title">
+                <span class="code">&lt;</span>
+                Map Data Across the Globe
+                <span class="code">&#47;&gt;</span>
+            </p>
+        </a>
+        <a
+                href="https://codepen.io/freeCodeCamp/full/wGqEga"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+                    alt="project"
+            />
+            <p class="project-title">
+                <span class="code">&lt;</span>
+                Wikipedia Viewer
+                <span class="code">&#47;&gt;</span>
+            </p>
+        </a>
+        <a
+                href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+                target="_blank"
+                class="project project-tile"
+        >
+            <img
+                    class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+                    alt="project"
+            />
+            <p class="project-title">
+                <span class="code">&lt;</span>
+                Tic Tac Toe Game
+                <span class="code">&#47;&gt;</span>
+            </p>
+        </a>
+    </div>
+
+    <a
+            href="https://codepen.io/FreeCodeCamp/"
+            class="btn btn-show-all"
+            target="_blank"
+    >Show all<i class="fas fa-chevron-right"></i
+    ></a>
+</section>
+
+<!-- END PROJECTS SECTION -->
+
+<!-- START CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+    <div class="contact-section-header">
+        <h2>How to get in touch</h2>
+    </div>
+    <div class="contact-links">
+        <a href="mailto: chadharper811@gmail.com"  class="btn contact-details"><i class="fa-solid fa-envelope"></i>Email me</a>
+        <a href="tel:913-961-8439" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+        <a href="https://chadharper811.github.io/Resume/" target="_blank" class="btn contact-details"><i class="fa-solid fa-file"></i>Resume Site</a>
+        <a id="profile-link" href="https://github.com/ChadHarper811" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/chadharper811/"  target="_blank" class="btn contact-details"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+
+    </div>
+</section>
+
+<!-- END CONTACT SECTION -->
+
+<!-- START FOOTER SECTION -->
+
+<footer>
+    <p>
+        **This is just a portfolio project created for
+        <a href="https://www.freecodecamp.com/" target="_blank"
+        >freeCodeCamp <i class="fab fa-free-code-camp"></i
+        ></a>
+    </p>
+    <p>
+        &copy; Chad Harper
+    </p>
+</footer>
+
+<!-- END FOOTER SECTION -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
