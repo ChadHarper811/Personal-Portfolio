@@ -200,8 +200,6 @@ img {
   border-bottom: 0.2rem solid #f0f0f0;
 }
 
-
-
 @media (max-width: 28.75em) {
   .projects-section-header {
     font-size: 4rem;
@@ -237,21 +235,17 @@ img {
 
 .project:hover {
 box-shadow: 4px 4px 3px black;
-}
-
-.code {
-  color: var(--gray);
-  transition: color 0.3s ease-out;
-}
-
-.project:hover .code {
-  color: #ff7f50;
+background-color: gray;
 }
 
 .project-image {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+}
+
+.project-image:hover {
+opacity: .85;
 }
 
 .project-title {
