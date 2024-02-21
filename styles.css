@@ -202,8 +202,6 @@ opacity: .85;
   transition: transform 0.3s ease-out;
 }
 
-/* Contact section */
-
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -218,12 +216,6 @@ opacity: .85;
 
 .contact-section-header > h2 {
   font-size: 6rem;
-}
-
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
 }
 
 .contact-section-header > p {
@@ -250,8 +242,6 @@ opacity: .85;
   color: var(--orange);
 }
 
-/* Footer */
-
 footer {
   font-weight: 300;
   display: flex;
@@ -267,11 +257,4 @@ footer > p {
 
 footer i {
   vertical-align: middle;
-}
-
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
 }
