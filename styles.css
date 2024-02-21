@@ -62,8 +62,6 @@ img {
   width: 100%;
 }
 
-/* nav */
-
 .nav {
   display: flex;
   justify-content: flex-start;
@@ -81,15 +79,6 @@ img {
   margin-right: 2rem;
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
-}
 
 .nav-list a {
   display: block;
@@ -100,8 +89,6 @@ img {
 .nav-list a:hover {
   background: var(--gray);
 }
-
-/* Welcome section */
 
 .welcome-section {
   display: flex;
@@ -122,7 +109,6 @@ img {
   color: var(--orange);
   text-shadow: 2px 2px 3px black;
 }
-/* About Me section */
 
 .about-me {
   display: flex;
@@ -142,14 +128,11 @@ img {
   width: 80vw;
 }
 
-/* Projects section */
-
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
   background: var(--blue);
 }
-
 
 .projects-section-header {
   max-width: 640px;
@@ -157,13 +140,6 @@ img {
   border-bottom: 0.2rem solid #f0f0f0;
 }
 
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
-
-/* "Automagic" image grid using no media queries */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -172,16 +148,6 @@ img {
   max-width: 1280px;
   margin: 6rem auto 6rem auto;
   margin-bottom: 6rem;
-}
-
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .project {
