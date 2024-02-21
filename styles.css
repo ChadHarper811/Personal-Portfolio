@@ -6,13 +6,11 @@
   --white: #f0f0f0;
 }
 
-/* Base reset */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* box-sizing and font sizing */
 *,
 *::before,
 *::after {
