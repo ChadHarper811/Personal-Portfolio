@@ -158,7 +158,6 @@ opacity: .85;
 .project-image {
   height: 100%;
   width: 350px;
-  object-fit: cover;
 }
 
 .project-title {
