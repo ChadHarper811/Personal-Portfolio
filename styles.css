@@ -136,11 +136,11 @@ img {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 30px;
   width: 100%;
   max-width: 1280px;
-  margin: 6rem auto 6rem auto;
-  margin-bottom: 6rem;
+  margin: 40px auto 40px auto;
+  margin-bottom: 40px;
 }
 
 .project {
