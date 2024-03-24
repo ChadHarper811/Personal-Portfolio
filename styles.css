@@ -1,8 +1,10 @@
 :root {
     --blue: #092B40;
+    --light_gray: #696969;
     --gray: #3a3e43;
     --orange: #c96700;
     --white: #f0f0f0;
+    --off_white: #d6d6d6;
 }
 
 html {
@@ -42,7 +44,7 @@ body {
 }
 
 li a:hover {
-    background-color: var(--gray);
+    background-color: var(--light_gray);
 }
 
 h1 {
@@ -76,10 +78,64 @@ p {
     padding: 20vh 50px 0 50px;
 }
 
-.aboutMeSection a:link, a:visited {
-    color: lightslategray;
+a:link, a:visited {
+    color: var(--light_gray);
 }
 
-.aboutMeSection a:hover {
+a:hover {
     color: var(--orange);
 }
+
+.projectsSection {
+    background-color: var(--gray);
+    padding: 1px 20px 50px 20px;
+}
+
+.projectsSectionLayout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1500px;
+}
+
+.projectsSectionLayout a {
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--off_white);
+}
+
+.projectsSectionLayout a:hover {
+    box-shadow: 0px 8px 16px 0px black;
+    transform: translateY(-5px);
+}
+
+.projectIMG {
+    width: 350px;
+}
+
+.contactSection {
+    height: 59vh;
+    background-color: var(--blue);
+    padding: 20vh 50px 0 50px;
+}
+
+.contactLinks a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 15px 0 15px;
+}
+
+.contactLinks a:hover {
+    transform: translateY(10px);
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--gray);
+    padding: 1px 0 20px 0;
+}
+
