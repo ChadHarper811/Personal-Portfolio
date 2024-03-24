@@ -62,7 +62,7 @@ p {
 
 .welcomeSection {
     height: 100vh;
-    background-image: url(Pictures/background.jpg);
+    background-image: url(Pictures\background.jpg);
     background-size: cover;
     background-color: black;
 }
