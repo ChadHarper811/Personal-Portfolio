@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    /* scroll-padding-top: ; */
 }
 
 body {
@@ -25,6 +25,11 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: var(--orange);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
 }
 
 li a {
@@ -38,5 +43,32 @@ li a {
 
 li a:hover {
     background-color: var(--gray);
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.welcomeSection {
+    height: 100vh;
+    background-image: url(.idea/Pictures/background.jpg);
+    background-size: cover;
+    background-color: black;
+}
+.welcomeSection h1 {
+    color: var(--orange);
+}
+
+.welcomeSectionText {
+    padding-top: 45vh;
+    text-shadow: 2px 2px 3px black;
 }
 
