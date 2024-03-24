@@ -128,10 +128,6 @@ a:hover {
     margin: 0 15px 0 15px;
 }
 
-.contactLinks a:hover {
-    transform: translateY(10px);
-}
-
 footer {
     height: 10vh;
     width: 100%;
