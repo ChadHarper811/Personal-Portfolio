@@ -12,11 +12,31 @@ html {
 
 body {
     font-family: 'Nova Square', sans-serif;
-    color: #f0f0f0;
+    color: var(--white);
     justify-content: center;
     text-align: center;
     display: block;
     margin: 0;
-  }
+}
 
-  
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--orange);
+}
+
+li a {
+    font-size: 25px;
+    color: var(--white);
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    float: left;
+}
+
+li a:hover {
+    background-color: var(--gray);
+}
+
