@@ -1,0 +1,22 @@
+:root {
+    --blue: #092B40;
+    --gray: #3a3e43;
+    --orange: #c96700;
+    --white: #f0f0f0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Nova Square', sans-serif;
+    color: #f0f0f0;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+
+  
