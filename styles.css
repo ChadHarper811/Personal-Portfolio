@@ -53,7 +53,7 @@ h1 {
 }
 
 P {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .welcomeSection {
@@ -69,25 +69,21 @@ P {
 }
 
 .aboutMeSection {
-    height: 70vh;
+    height: 72vh;
     background-color: var(--blue);
     padding: 20vh 50px 0 50px;
 }
 
-a:link, a:visited {
+.projectsSection a:link, a:visited {
     color: var(--light_gray);
 }
 
-a:hover {
-    color: var(--orange);
-}
-
-.projectsSection {
+.projects {
     background-color: var(--gray);
     padding: 1px 20px 50px 20px;
 }
 
-.projectsSectionLayout {
+.projectsSection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,58 +93,58 @@ a:hover {
     max-width: 1500px;
 }
 
-.projectsSectionLayout a {
+.projectsSection a {
     border-radius: 3px;
     padding: 10px;
     background-color: var(--off_white);
 }
 
-.projectsSectionLayout a:hover {
+.projectsSection a:hover {
+    color: var(--orange);
     box-shadow: 0px 8px 16px 0px black;
     transform: translateY(-5px);
+    transition: 0.5s ease-out;
 }
 
-.projectIMG {
+.projectImg {
     width: 350px;
 }
 
+.hover {
+    color: var(--blue);
+}
+
+.info {
+    font-size: 25px;
+    margin: 5px 7px 10px 7px;
+    display: inline-block;
+}
+
+.info a:link, a:visited {
+    color: var(--light_gray);
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: var(--orange);
+    text-shadow: 3px 3px 2px black;
+    transition: 0.5s ease-out;
+}
+
+.info a:hover > .hover {
+    color: var(--orange);
+    transition: 0.5s ease-out;
+}
+
 .contactSection {
-    height: 59vh;
+    height: 62vh;
     background-color: var(--blue);
     padding: 20vh 50px 0 50px;
 }
 
-.contactLinks a {
-    font-size: 25px;
-    text-decoration: none;
-    margin: 0 15px 0 15px;
-}
-
 footer {
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     background-color: var(--gray);
     padding: 1px 0 20px 0;
 }
-
-@media screen and (max-width: 580px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    #navbar li a {
-        font-size: 18px;
-    }
-    
-    .projectIMG {
-        width: 300px;
-    }
-
-    .contactLinks a {
-        font-size: 20px;
-    }
-  }
