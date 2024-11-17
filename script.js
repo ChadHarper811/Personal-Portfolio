@@ -142,13 +142,20 @@ const allProjects = document.getElementsByClassName("project-tile");
 
 data.filter(el => el.href).forEach(
     ({href, thumbnail, title, date}) => {
-        projectsSection.innerHTML += `
-        <a href="${href}" target="_blank" class="project-tile">
+        projects.innerHTML += `
+        <div class="project-tile">
             <img class="projectImg" src="${thumbnail}" alt="${title}"/>
-            <h3>${title}</h3>
+             <h3> <span class="hover">&lt;</span> ${title} <span class="hover">&#47;&gt;</span> </h3> 
             <p>Completed: ${date}</p>
-        </a>
+        </div>
         `
+        // projects.innerHTML += `
+        // <a href="${href}" target="_blank" class="project-tile">
+        //     <img class="projectImg" src="${thumbnail}" alt="${title}"/>
+        //     <h3>${title}</h3>
+        //     <p>Completed: ${date}</p>
+        // </a>
+        // `
     }
 )
 

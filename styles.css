@@ -74,16 +74,16 @@ P {
     padding: 20vh 50px 0 50px;
 }
 
-.projectsSection a:link, a:visited {
+.projects a:link, a:visited {
     color: var(--light_gray);
 }
 
-.projects {
+.projectsSection {
     background-color: var(--gray);
     padding: 1px 20px 50px 20px;
 }
 
-.projectsSection {
+.projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -93,17 +93,42 @@ P {
     max-width: 1500px;
 }
 
-.projectsSection a {
+/* .projects a {
     border-radius: 3px;
     padding: 10px;
     background-color: var(--off_white);
 }
 
-.projectsSection a:hover {
+.projects a:hover {
     color: var(--orange);
     box-shadow: 0px 8px 16px 0px black;
     transform: translateY(-5px);
     transition: 0.5s ease-out;
+} */
+
+
+.project-tile {
+    color: var(--light_gray);
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--off_white);
+}
+
+.project-tile:hover  {
+    color: var(--orange);
+    box-shadow: 0px 8px 16px 0px black;
+    transform: translateY(-5px);
+    transition: 0.4s ease-out;
+}
+
+.project-tile > h3 > .hover {
+    color: var(--off_white);
+}
+
+.project-tile:hover  > h3 > .hover {
+    color: var(--orange);
+    transform: translateY(-5px);
+    transition: 0.4s ease-out;
 }
 
 .projectImg {
@@ -167,7 +192,7 @@ P {
     cursor: pointer;
 }
 
-.hover {
+.info > a > .hover {
     color: var(--blue);
 }
 
@@ -188,7 +213,7 @@ P {
     transition: 0.5s ease-out;
 }
 
-.info a:hover > .hover {
+.info:hover > a > .hover {
     color: var(--orange);
     transition: 0.5s ease-out;
 }
