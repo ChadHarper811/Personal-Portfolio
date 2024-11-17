@@ -93,19 +93,6 @@ P {
     max-width: 1500px;
 }
 
-/* .projects a {
-    border-radius: 3px;
-    padding: 10px;
-    background-color: var(--off_white);
-}
-
-.projects a:hover {
-    color: var(--orange);
-    box-shadow: 0px 8px 16px 0px black;
-    transform: translateY(-5px);
-    transition: 0.5s ease-out;
-} */
-
 
 .project-tile {
     color: var(--light_gray);

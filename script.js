@@ -1,5 +1,6 @@
 const data = [
     {
+        id: 0,
         href: "https://chadharper811.github.io/Resume/",
         thumbnail: "Pictures/Resume.png",
         title: "Resume Website",
@@ -8,38 +9,43 @@ const data = [
         code: "https://github.com/ChadHarper811/Resume"
     },
     {
+        id: 1,
         href: "https://chadharper811.github.io/panthera/",
         thumbnail: "Pictures/Nike site/Nike.png",
         title: "Nike Panthera Series Website",
         date: "Apr 17, 2023",
         images: [],
-        code: ""
+        code: "https://github.com/ChadHarper811/panthera"
     },
     {
+        id: 2,
         href: "https://chadharper811.github.io/Harpers-Adventures/",
         thumbnail: "Pictures/Harper's Adventures/Harper's Adventures.png",
         title: "Harper's Adventures Travel Blog",
         date: "Jul 27, 2023",
         images: [],
-        code: ""
+        code: "https://github.com/ChadHarper811/Harpers-Adventures"
     },
     {
+        id: 3,
         href: "https://chadharper811.github.io/Tribute-page/",
         thumbnail: "Pictures/Tribute Page.png",
         title: "Steven Hawking Tribute Page",
         date: "Nov 26, 2023",
         images: [],
-        code: ""
+        code: "https://github.com/ChadHarper811/Tribute-page"
     },
     {
+        id: 4,
         href: "https://chadharper811.github.io/Customer-Service-Survey/",
         thumbnail: "Pictures/Customer Survey/Survey.png",
         title: "Customer Service Survey",
         date: "Nov 27, 2023",
-        images: [],
+        images: ["Pictures/Customer Survey/Survey 1.png", "Pictures/Customer Survey/Survey 2.png", "Pictures/Customer Survey/Survey 3.png"],
         code: ""
     },
     {
+        id: 5,
         href: "https://github.com/ChadHarper811/BookMaster",
         thumbnail: "Pictures/BookMaster/BookMaster.png",
         title: "BookMaster React App",
@@ -48,6 +54,7 @@ const data = [
         code: ""
     },
     {
+        id: 6,
         href: "https://chadharper811.github.io/Technical-Page/",
         thumbnail: "Pictures/King of Tokyo Rulebook/King of Tokyo Rulebook.png",
         title: "King of Tokyo Rulebook",
@@ -56,6 +63,7 @@ const data = [
         code: ""
     },
     {
+        id: 7,
         href: "https://chadharper811.github.io/Palidrome-Checker/",
         thumbnail: "Pictures/Palindrome Checker/palindrome checker.png",
         title: "Palindrome Checker",
@@ -64,6 +72,7 @@ const data = [
         code: ""
     },
     {
+        id: 8,
         href: "https://chadharper811.github.io/Harpers_Adventures_JS/",
         thumbnail: "Pictures/Harper's Adventures JS/Harper's Adventures JS.png",
         title: "Harper's Adventures JS Update",
@@ -72,6 +81,7 @@ const data = [
         code: ""
     },
     {
+        id: 9,
         href: "https://chadharper811.github.io/roman_numeral_converter/",
         thumbnail: "Pictures/Roman Numeral Converter.png",
         title: "Roman Numeral Converter",
@@ -80,6 +90,7 @@ const data = [
         code: ""
     },
     {
+        id: 10,
         href: "https://chadharper811.github.io/telephone_number_validator/",
         thumbnail: "Pictures/Telephone Number Validator.png",
         title: "Telephone Number Validator",
@@ -88,6 +99,7 @@ const data = [
         code: ""
     },
     {
+        id: 11,
         href: "https://chadharper811.github.io/Updated-Resume/",
         thumbnail: "Pictures/Updated Resume/Updated resume Website.png",
         title: "Updated Resume Website",
@@ -96,6 +108,7 @@ const data = [
         code: ""
     },
     {
+        id: 12,
         href: "https://chadharper811.github.io/cash_register/",
         thumbnail: "Pictures/Cash Register/Cash Register.png",
         title: "Cash Register",
@@ -141,7 +154,7 @@ const modalInfo = document.getElementById("modalInfo");
 const allProjects = document.getElementsByClassName("project-tile");
 
 data.filter(el => el.href).forEach(
-    ({href, thumbnail, title, date}) => {
+    ({thumbnail, title, date}) => {
         projects.innerHTML += `
         <div class="project-tile">
             <img class="projectImg" src="${thumbnail}" alt="${title}"/>
@@ -149,13 +162,6 @@ data.filter(el => el.href).forEach(
             <p>Completed: ${date}</p>
         </div>
         `
-        // projects.innerHTML += `
-        // <a href="${href}" target="_blank" class="project-tile">
-        //     <img class="projectImg" src="${thumbnail}" alt="${title}"/>
-        //     <h3>${title}</h3>
-        //     <p>Completed: ${date}</p>
-        // </a>
-        // `
     }
 )
 
