@@ -9,7 +9,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/panthera/",
-        thumbnail: "Pictures/Nike.png",
+        thumbnail: "Pictures/Nike site/Nike.png",
         title: "Nike Panthera Series Website",
         date: "Apr 17, 2023",
         images: [],
@@ -17,7 +17,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/Harpers-Adventures/",
-        thumbnail: "Pictures/Harper's Adventures.png",
+        thumbnail: "Pictures/Harper's Adventures/Harper's Adventures.png",
         title: "Harper's Adventures Travel Blog",
         date: "Jul 27, 2023",
         images: [],
@@ -33,7 +33,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/Customer-Service-Survey/",
-        thumbnail: "Pictures/Survey.png",
+        thumbnail: "Pictures/Customer Survey/Survey.png",
         title: "Customer Service Survey",
         date: "Nov 27, 2023",
         images: [],
@@ -41,7 +41,7 @@ const data = [
     },
     {
         href: "https://github.com/ChadHarper811/BookMaster",
-        thumbnail: "Pictures/BookMaster.png",
+        thumbnail: "Pictures/BookMaster/BookMaster.png",
         title: "BookMaster React App",
         date: "Jan 22, 2024",
         images: [],
@@ -49,7 +49,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/Technical-Page/",
-        thumbnail: "Pictures/King of Tokyo Rulebook.png",
+        thumbnail: "Pictures/King of Tokyo Rulebook/King of Tokyo Rulebook.png",
         title: "King of Tokyo Rulebook",
         date: "Feb 4, 2024",
         images: [],
@@ -57,7 +57,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/Palidrome-Checker/",
-        thumbnail: "Pictures/palindrome checker.png",
+        thumbnail: "Pictures/Palindrome Checker/palindrome checker.png",
         title: "Palindrome Checker",
         date: "May 16, 2024",
         images: [],
@@ -65,7 +65,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/Harpers_Adventures_JS/",
-        thumbnail: "Pictures/Harper's Adventures JS.png",
+        thumbnail: "Pictures/Harper's Adventures JS/Harper's Adventures JS.png",
         title: "Harper's Adventures JS Update",
         date: "Aug 12, 2024",
         images: [],
@@ -89,7 +89,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/Updated-Resume/",
-        thumbnail: "Pictures/Updated resume Website.png",
+        thumbnail: "Pictures/Updated Resume/Updated resume Website.png",
         title: "Updated Resume Website",
         date: "Oct 20, 2024",
         images: [],
@@ -97,7 +97,7 @@ const data = [
     },
     {
         href: "https://chadharper811.github.io/cash_register/",
-        thumbnail: "Pictures/Cash Register.png",
+        thumbnail: "Pictures/Cash Register/Cash Register.png",
         title: "Cash Register",
         date: "Nov 16, 2024",
         images: [],
