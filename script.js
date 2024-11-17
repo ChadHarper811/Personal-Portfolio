@@ -14,7 +14,7 @@ const data = [
         thumbnail: "Pictures/Nike site/Nike.png",
         title: "Nike Panthera Series Website",
         date: "Apr 17, 2023",
-        images: [],
+        images: ["Pictures/Nike site/Nike 1.png", "Pictures/Nike site/Nike 2.png", "Pictures/Nike site/Nike 3.png", "Pictures/Nike site/Nike 4.png", "Pictures/Nike site/Nike 5.png"],
         code: "https://github.com/ChadHarper811/panthera"
     },
     {
@@ -50,7 +50,7 @@ const data = [
         thumbnail: "Pictures/BookMaster/BookMaster.png",
         title: "BookMaster React App",
         date: "Jan 22, 2024",
-        images: [],
+        images: ["Pictures/BookMaster/BookMaster 1.png", "Pictures/BookMaster/BookMaster 2.png", "Pictures/BookMaster/BookMaster 3.png", "Pictures/BookMaster/BookMaster 4.png", "Pictures/BookMaster/BookMaster 5.png", "Pictures/BookMaster/BookMaster 6.png", "Pictures/BookMaster/BookMaster 7.png", "Pictures/BookMaster/BookMaster 8.png", "Pictures/BookMaster/BookMaster 9.png"],
         code: ""
     },
     {
