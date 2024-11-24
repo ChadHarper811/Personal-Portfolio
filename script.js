@@ -77,7 +77,7 @@ const data = [
         thumbnail: "Pictures/Harper's Adventures JS/Harper's Adventures JS.png",
         title: "Harper's Adventures JS Update",
         date: "Aug 12, 2024",
-        images: ["Pictures/Harper's Adventures JS/Harper's Adventures JS.png"],
+        images: ["Pictures/Harper's Adventures JS/Harper's Adventures JS.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 1.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 2.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 3.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 4.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 5.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 6.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 7.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 8.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 9.png"],
         code: ""
     },
     {
