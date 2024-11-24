@@ -102,10 +102,10 @@ const data = [
     {
         id: 11,
         href: "https://chadharper811.github.io/Updated-Resume/",
-        thumbnail: "Pictures/Updated Resume/Updated resume Website.png",
+        thumbnail: "Pictures/Updated Resume/Updated Resume.png",
         title: "Updated Resume Website",
         date: "Oct 20, 2024",
-        images: ["Pictures/Updated Resume/Updated resume Website.png"],
+        images: ["Pictures/Updated Resume/Updated Resume.png", "Pictures/Updated Resume/Updated Resume 1.png"],
         code: ""
     },
     {
