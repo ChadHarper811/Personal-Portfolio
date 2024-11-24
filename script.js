@@ -23,7 +23,7 @@ const data = [
         thumbnail: "Pictures/Harper's Adventures/Harper's Adventures.png",
         title: "Harper's Adventures Travel Blog",
         date: "Jul 27, 2023",
-        images: [],
+        images: ["Pictures/Harper's Adventures/Harper's Adventures.png"],
         code: "https://github.com/ChadHarper811/Harpers-Adventures"
     },
     {
