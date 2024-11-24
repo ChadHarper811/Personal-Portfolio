@@ -68,7 +68,7 @@ const data = [
         thumbnail: "Pictures/Palindrome Checker/palindrome checker.png",
         title: "Palindrome Checker",
         date: "May 16, 2024",
-        images: [],
+        images: ["Pictures/Palindrome Checker/palindrome checker.png"],
         code: ""
     },
     {
