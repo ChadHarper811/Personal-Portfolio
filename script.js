@@ -113,7 +113,7 @@ const data = [
         thumbnail: "Pictures/Cash Register/Cash Register.png",
         title: "Cash Register",
         date: "Nov 16, 2024",
-        images: [],
+        images: ["Pictures/Cash Register/Cash Register.png"],
         code: ""
     },
     {
