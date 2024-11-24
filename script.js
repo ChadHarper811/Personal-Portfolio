@@ -41,7 +41,7 @@ const data = [
         thumbnail: "Pictures/Customer Survey/Survey.png",
         title: "Customer Service Survey",
         date: "Nov 27, 2023",
-        images: ["Pictures/Customer Survey/Survey 1.png", "Pictures/Customer Survey/Survey 2.png", "Pictures/Customer Survey/Survey 3.png"],
+        images: ["Pictures/Customer Survey/Survey.png", "Pictures/Customer Survey/Survey 1.png", "Pictures/Customer Survey/Survey 2.png", "Pictures/Customer Survey/Survey 3.png"],
         code: ""
     },
     {
