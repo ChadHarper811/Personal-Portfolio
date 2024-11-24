@@ -14,7 +14,7 @@ const data = [
         thumbnail: "Pictures/Nike site/Nike.png",
         title: "Nike Panthera Series Website",
         date: "Apr 17, 2023",
-        images: ["Pictures/Nike site/Nike.png", "Pictures/Nike site/Nike 1.png", "Pictures/Nike site/Nike 2.png", "Pictures/Nike site/Nike 3.png", "Pictures/Nike site/Nike 4.png", "Pictures/Nike site/Nike 5.png"],
+        images: ["Pictures/Nike site/Nike.png", "Pictures/Nike site/Nike 1.png", "Pictures/Nike site/Nike 2.png", "Pictures/Nike site/Nike 3.png", "Pictures/Nike site/Nike 4.png", "Pictures/Nike site/Nike 5.png", "Pictures/Nike site/Nike 6.png"],
         code: "https://github.com/ChadHarper811/panthera"
     },
     {
