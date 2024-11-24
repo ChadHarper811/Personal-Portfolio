@@ -86,7 +86,7 @@ const data = [
         thumbnail: "Pictures/Roman Numeral Converter.png",
         title: "Roman Numeral Converter",
         date: "Aug 24, 2024",
-        images: [],
+        images: ["Pictures/Roman Numeral Converter.png"],
         code: ""
     },
     {
