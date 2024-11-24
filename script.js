@@ -104,7 +104,7 @@ const data = [
         thumbnail: "Pictures/Updated Resume/Updated resume Website.png",
         title: "Updated Resume Website",
         date: "Oct 20, 2024",
-        images: [],
+        images: ["Pictures/Updated Resume/Updated resume Website.png"],
         code: ""
     },
     {
