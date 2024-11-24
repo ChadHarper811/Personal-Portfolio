@@ -4,6 +4,7 @@ const data = [
         href: "https://chadharper811.github.io/Resume/",
         thumbnail: "Pictures/Resume/Resume.png",
         title: "Resume Website",
+        languages: ["HTML: ", "CSS: "],
         date: "Jan 28, 2023",
         images: ["Pictures/Resume/Resume.png", "Pictures/Resume/Resume 1.png"],
         code: "https://github.com/ChadHarper811/Resume"
@@ -65,10 +66,10 @@ const data = [
     {
         id: 7,
         href: "https://chadharper811.github.io/Palidrome-Checker/",
-        thumbnail: "Pictures/Palindrome Checker/palindrome checker.png",
+        thumbnail: "Pictures/Palindrome Checker/Palindrome Checker.png",
         title: "Palindrome Checker",
         date: "May 16, 2024",
-        images: ["Pictures/Palindrome Checker/palindrome checker.png"],
+        images: ["Pictures/Palindrome Checker/Palindrome Checker.png", "Pictures/Palindrome Checker/Palindrome Checker 1.png", "Pictures/Palindrome Checker/Palindrome Checker 2.png", "Pictures/Palindrome Checker/Palindrome Checker 3.png", "Pictures/Palindrome Checker/Palindrome Checker 4.png"],
         code: ""
     },
     {
@@ -83,10 +84,10 @@ const data = [
     {
         id: 9,
         href: "https://chadharper811.github.io/roman_numeral_converter/",
-        thumbnail: "Pictures/Roman Numeral Converter.png",
+        thumbnail: "Pictures/Roman Numeral Converter/Roman Numeral Converter.png",
         title: "Roman Numeral Converter",
         date: "Aug 24, 2024",
-        images: ["Pictures/Roman Numeral Converter.png"],
+        images: ["Pictures/Roman Numeral Converter/Roman Numeral Converter.png", "Pictures/Roman Numeral Converter/Roman Numeral Converter 1.png", "Pictures/Roman Numeral Converter/Roman Numeral Converter 2.png"],
         code: ""
     },
     {
