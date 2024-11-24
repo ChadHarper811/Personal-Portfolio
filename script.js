@@ -32,7 +32,7 @@ const data = [
         thumbnail: "Pictures/Tribute Page.png",
         title: "Steven Hawking Tribute Page",
         date: "Nov 26, 2023",
-        images: [],
+        images: ["Pictures/Tribute Page.png"],
         code: "https://github.com/ChadHarper811/Tribute-page"
     },
     {
