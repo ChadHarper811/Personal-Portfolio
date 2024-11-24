@@ -4,8 +4,9 @@ const data = [
         href: "https://chadharper811.github.io/Resume/",
         thumbnail: "Pictures/Resume/Resume.png",
         title: "Resume Website",
-        languages: ["HTML: ", "CSS: "],
-        date: "Jan 28, 2023",
+        languages: ["HTML: 89.4%", "CSS: 10.6%"],
+        date: "1/28/23",
+        purpose: "Bootcamp admission project",
         images: ["Pictures/Resume/Resume.png", "Pictures/Resume/Resume 1.png"],
         code: "https://github.com/ChadHarper811/Resume"
     },
@@ -14,7 +15,9 @@ const data = [
         href: "https://chadharper811.github.io/panthera/",
         thumbnail: "Pictures/Nike site/Nike.png",
         title: "Nike Panthera Series Website",
-        date: "Apr 17, 2023",
+        languages: ["HTML: 80.1%", "CSS: 19.9%"],
+        date: "4/17/23",
+        purpose: "RWD Cert. Project",
         images: ["Pictures/Nike site/Nike.png", "Pictures/Nike site/Nike 1.png", "Pictures/Nike site/Nike 2.png", "Pictures/Nike site/Nike 3.png", "Pictures/Nike site/Nike 4.png", "Pictures/Nike site/Nike 5.png", "Pictures/Nike site/Nike 6.png"],
         code: "https://github.com/ChadHarper811/panthera"
     },
@@ -23,7 +26,9 @@ const data = [
         href: "https://chadharper811.github.io/Harpers-Adventures/",
         thumbnail: "Pictures/Harper's Adventures/Harper's Adventures.png",
         title: "Harper's Adventures Travel Blog",
-        date: "Jul 27, 2023",
+        languages: ["HTML: 92%", "CSS: 6.4%", "JavaScript: 1.6%"],
+        date: "7/27/23",
+        purpose: "LaunchCode Project",
         images: ["Pictures/Harper's Adventures/Harper's Adventures.png", "Pictures/Harper's Adventures/Harper's Adventures 1.png", "Pictures/Harper's Adventures/Harper's Adventures 2.png", "Pictures/Harper's Adventures/Harper's Adventures 3.png", "Pictures/Harper's Adventures/Harper's Adventures 4.png", "Pictures/Harper's Adventures/Harper's Adventures 5.png", "Pictures/Harper's Adventures/Harper's Adventures 6.png", "Pictures/Harper's Adventures/Harper's Adventures 7.png", "Pictures/Harper's Adventures/Harper's Adventures 8.png"],
         code: "https://github.com/ChadHarper811/Harpers-Adventures"
     },
@@ -32,7 +37,9 @@ const data = [
         href: "https://chadharper811.github.io/Tribute-page/",
         thumbnail: "Pictures/Tribute Page.png",
         title: "Steven Hawking Tribute Page",
-        date: "Nov 26, 2023",
+        languages: ["HTML: 85.6%", "CSS: 14.4%"],
+        date: "11/26/23",
+        purpose: "RWD Cert. Project",
         images: ["Pictures/Tribute Page.png"],
         code: "https://github.com/ChadHarper811/Tribute-page"
     },
@@ -41,43 +48,53 @@ const data = [
         href: "https://chadharper811.github.io/Customer-Service-Survey/",
         thumbnail: "Pictures/Customer Survey/Survey.png",
         title: "Customer Service Survey",
-        date: "Nov 27, 2023",
+        languages: ["HTML: 60.3%", "CSS: 39.7%"],
+        date: "11/27/23",
+        purpose: "RWD Cert. Project",
         images: ["Pictures/Customer Survey/Survey.png", "Pictures/Customer Survey/Survey 1.png", "Pictures/Customer Survey/Survey 2.png", "Pictures/Customer Survey/Survey 3.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/Customer-Service-Survey"
     },
     {
         id: 5,
         href: "https://github.com/ChadHarper811/BookMaster",
         thumbnail: "Pictures/BookMaster/BookMaster.png",
         title: "BookMaster React App",
-        date: "Jan 22, 2024",
+        languages: ["HTML: ", "CSS: "],
+        date: "1/22/24",
+        purpose: "LaunchCode Group Project",
         images: ["Pictures/BookMaster/BookMaster.png", "Pictures/BookMaster/BookMaster 1.png", "Pictures/BookMaster/BookMaster 2.png", "Pictures/BookMaster/BookMaster 3.png", "Pictures/BookMaster/BookMaster 4.png", "Pictures/BookMaster/BookMaster 5.png", "Pictures/BookMaster/BookMaster 6.png", "Pictures/BookMaster/BookMaster 7.png", "Pictures/BookMaster/BookMaster 8.png", "Pictures/BookMaster/BookMaster 9.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/BookMaster"
     },
     {
         id: 6,
         href: "https://chadharper811.github.io/Technical-Page/",
         thumbnail: "Pictures/King of Tokyo Rulebook/King of Tokyo.png",
         title: "King of Tokyo Rulebook",
-        date: "Feb 4, 2024",
+        languages: ["HTML: ", "CSS: "],
+        date: "2/4/24",
+        purpose: "RWD Cert. Project",
         images: ["Pictures/King of Tokyo Rulebook/King of Tokyo.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 1.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 2.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 3.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 4.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 5.png", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 6", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 7", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 8"],
-        code: ""
+        code: "https://github.com/ChadHarper811/Technical-Page"
     },
     {
         id: 7,
         href: "https://chadharper811.github.io/Palidrome-Checker/",
         thumbnail: "Pictures/Palindrome Checker/Palindrome Checker.png",
         title: "Palindrome Checker",
-        date: "May 16, 2024",
+        languages: ["HTML: 32.8%", "CSS: 36.7%", "JavaScript: 30.5%"],
+        date: "5/16/24",
+        purpose: "JSADS Cert. Project",
         images: ["Pictures/Palindrome Checker/Palindrome Checker.png", "Pictures/Palindrome Checker/Palindrome Checker 1.png", "Pictures/Palindrome Checker/Palindrome Checker 2.png", "Pictures/Palindrome Checker/Palindrome Checker 3.png", "Pictures/Palindrome Checker/Palindrome Checker 4.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/Palidrome-Checker"
     },
     {
         id: 8,
         href: "https://chadharper811.github.io/Harpers_Adventures_JS/",
         thumbnail: "Pictures/Harper's Adventures JS/Harper's Adventures JS.png",
         title: "Harper's Adventures JS Update",
-        date: "Aug 12, 2024",
+        languages: ["HTML: ", "CSS: "],
+        date: "8/12/24",
+        purpose: "Personal Project",
         images: ["Pictures/Harper's Adventures JS/Harper's Adventures JS.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 1.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 2.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 3.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 4.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 5.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 6.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 7.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 8.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 9.png"],
         code: ""
     },
@@ -86,7 +103,9 @@ const data = [
         href: "https://chadharper811.github.io/roman_numeral_converter/",
         thumbnail: "Pictures/Roman Numeral Converter/Roman Numeral Converter.png",
         title: "Roman Numeral Converter",
-        date: "Aug 24, 2024",
+        languages: ["HTML: ", "CSS: "],
+        date: "8/24/24",
+        purpose: "JSADS Cert.",
         images: ["Pictures/Roman Numeral Converter/Roman Numeral Converter.png", "Pictures/Roman Numeral Converter/Roman Numeral Converter 1.png", "Pictures/Roman Numeral Converter/Roman Numeral Converter 2.png"],
         code: ""
     },
@@ -95,7 +114,9 @@ const data = [
         href: "https://chadharper811.github.io/telephone_number_validator/",
         thumbnail: "Pictures/Telephone Number Validator/Telephone Number Validator.png",
         title: "Telephone Number Validator",
-        date: "Sep 2, 2024",
+        languages: ["HTML: ", "CSS: "],
+        date: "9/2/24",
+        purpose: "JSADS Cert.",
         images: ["Pictures/Telephone Number Validator/Telephone Number Validator.png", "Pictures/Telephone Number Validator/Telephone Number Validator 1.png"],
         code: ""
     },
@@ -104,7 +125,9 @@ const data = [
         href: "https://chadharper811.github.io/Updated-Resume/",
         thumbnail: "Pictures/Updated Resume/Updated Resume.png",
         title: "Updated Resume Website",
-        date: "Oct 20, 2024",
+        languages: ["HTML: ", "CSS: "],
+        date: "8/20/24",
+        purpose: "Personal Project",
         images: ["Pictures/Updated Resume/Updated Resume.png", "Pictures/Updated Resume/Updated Resume 1.png"],
         code: ""
     },
@@ -113,7 +136,9 @@ const data = [
         href: "https://chadharper811.github.io/cash_register/",
         thumbnail: "Pictures/Cash Register/Cash Register.png",
         title: "Cash Register",
-        date: "Nov 16, 2024",
+        languages: ["HTML: ", "CSS: "],
+        date: "11/16/24",
+        purpose: "JSADS Cert.",
         images: ["Pictures/Cash Register/Cash Register.png", "Pictures/Cash Register/Cash Register 1.png", "Pictures/Cash Register/Cash Register 2.png", "Pictures/Cash Register/Cash Register 3.png"],
         code: ""
     },
@@ -155,12 +180,12 @@ const modalInfo = document.getElementById("modalInfo");
 const allProjects = document.getElementsByClassName("project-tile");
 
 data.filter(el => el.href).forEach(
-    ({thumbnail, title, date}) => {
+    ({thumbnail, title, date, purpose}) => {
         projects.innerHTML += `
         <div class="project-tile">
             <img class="projectImg" src="${thumbnail}" alt="${title}"/>
              <h3> <span class="hover">&lt;</span> ${title} <span class="hover">&#47;&gt;</span> </h3> 
-            <p>Completed: ${date}</p>
+            <p>Completed: ${date} For: ${purpose}</p>
         </div>
         `
     }
