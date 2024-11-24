@@ -5,7 +5,7 @@ const data = [
         thumbnail: "Pictures/Resume.png",
         title: "Resume Website",
         date: "Jan 28, 2023",
-        images: [],
+        images: ["Pictures/Resume.png",],
         code: "https://github.com/ChadHarper811/Resume"
     },
     {
