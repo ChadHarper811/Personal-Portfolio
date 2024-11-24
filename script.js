@@ -93,10 +93,10 @@ const data = [
     {
         id: 10,
         href: "https://chadharper811.github.io/telephone_number_validator/",
-        thumbnail: "Pictures/Telephone Number Validator.png",
+        thumbnail: "Pictures/Telephone Number Validator/Telephone Number Validator.png",
         title: "Telephone Number Validator",
         date: "Sep 2, 2024",
-        images: ["Pictures/Telephone Number Validator.png"],
+        images: ["Pictures/Telephone Number Validator/Telephone Number Validator.png", "Pictures/Telephone Number Validator/Telephone Number Validator 1.png"],
         code: ""
     },
     {
