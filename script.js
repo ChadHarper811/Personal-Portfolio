@@ -95,7 +95,7 @@ const data = [
         thumbnail: "Pictures/Telephone Number Validator.png",
         title: "Telephone Number Validator",
         date: "Sep 2, 2024",
-        images: [],
+        images: ["Pictures/Telephone Number Validator.png"],
         code: ""
     },
     {
