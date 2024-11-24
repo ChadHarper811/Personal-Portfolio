@@ -2,10 +2,10 @@ const data = [
     {
         id: 0,
         href: "https://chadharper811.github.io/Resume/",
-        thumbnail: "Pictures/Resume.png",
+        thumbnail: "Pictures/Resume/Resume.png",
         title: "Resume Website",
         date: "Jan 28, 2023",
-        images: ["Pictures/Resume.png",],
+        images: ["Pictures/Resume/Resume.png", "Pictures/Resume/Resume 1.png"],
         code: "https://github.com/ChadHarper811/Resume"
     },
     {
