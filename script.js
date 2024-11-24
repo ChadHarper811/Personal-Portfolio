@@ -59,7 +59,7 @@ const data = [
         thumbnail: "Pictures/King of Tokyo Rulebook/King of Tokyo Rulebook.png",
         title: "King of Tokyo Rulebook",
         date: "Feb 4, 2024",
-        images: [],
+        images: ["Pictures/King of Tokyo Rulebook/King of Tokyo Rulebook.png"],
         code: ""
     },
     {
