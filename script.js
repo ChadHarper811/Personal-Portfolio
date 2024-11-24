@@ -23,7 +23,7 @@ const data = [
         thumbnail: "Pictures/Harper's Adventures/Harper's Adventures.png",
         title: "Harper's Adventures Travel Blog",
         date: "Jul 27, 2023",
-        images: ["Pictures/Harper's Adventures/Harper's Adventures.png"],
+        images: ["Pictures/Harper's Adventures/Harper's Adventures.png", "Pictures/Harper's Adventures/Harper's Adventures 1.png", "Pictures/Harper's Adventures/Harper's Adventures 2.png", "Pictures/Harper's Adventures/Harper's Adventures 3.png", "Pictures/Harper's Adventures/Harper's Adventures 4.png", "Pictures/Harper's Adventures/Harper's Adventures 5.png", "Pictures/Harper's Adventures/Harper's Adventures 6.png", "Pictures/Harper's Adventures/Harper's Adventures 7.png", "Pictures/Harper's Adventures/Harper's Adventures 8.png"],
         code: "https://github.com/ChadHarper811/Harpers-Adventures"
     },
     {
