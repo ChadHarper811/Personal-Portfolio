@@ -77,7 +77,7 @@ const data = [
         thumbnail: "Pictures/Harper's Adventures JS/Harper's Adventures JS.png",
         title: "Harper's Adventures JS Update",
         date: "Aug 12, 2024",
-        images: [],
+        images: ["Pictures/Harper's Adventures JS/Harper's Adventures JS.png"],
         code: ""
     },
     {
