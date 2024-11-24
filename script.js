@@ -56,10 +56,10 @@ const data = [
     {
         id: 6,
         href: "https://chadharper811.github.io/Technical-Page/",
-        thumbnail: "Pictures/King of Tokyo Rulebook/King of Tokyo Rulebook.png",
+        thumbnail: "Pictures/King of Tokyo Rulebook/King of Tokyo.png",
         title: "King of Tokyo Rulebook",
         date: "Feb 4, 2024",
-        images: ["Pictures/King of Tokyo Rulebook/King of Tokyo Rulebook.png"],
+        images: ["Pictures/King of Tokyo Rulebook/King of Tokyo.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 1.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 2.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 3.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 4.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 5.png", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 6", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 7", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 8"],
         code: ""
     },
     {
