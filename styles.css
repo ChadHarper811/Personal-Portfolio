@@ -122,6 +122,14 @@ P {
     width: 350px;
 }
 
+.languages {
+    display: block;
+}
+
+.languages > p {
+    display: inline-block;
+}
+
 #modal {
     display: none;
     position: fixed;

@@ -59,7 +59,7 @@ const data = [
         href: "https://github.com/ChadHarper811/BookMaster",
         thumbnail: "Pictures/BookMaster/BookMaster.png",
         title: "BookMaster React App",
-        languages: ["HTML: ", "CSS: "],
+        languages: ["HTML", "CSS", "JavaScript", "Java", "SpringBoot", "MySQL" ],
         date: "1/22/24",
         purpose: "LaunchCode Group Project",
         images: ["Pictures/BookMaster/BookMaster.png", "Pictures/BookMaster/BookMaster 1.png", "Pictures/BookMaster/BookMaster 2.png", "Pictures/BookMaster/BookMaster 3.png", "Pictures/BookMaster/BookMaster 4.png", "Pictures/BookMaster/BookMaster 5.png", "Pictures/BookMaster/BookMaster 6.png", "Pictures/BookMaster/BookMaster 7.png", "Pictures/BookMaster/BookMaster 8.png", "Pictures/BookMaster/BookMaster 9.png"],
@@ -70,7 +70,7 @@ const data = [
         href: "https://chadharper811.github.io/Technical-Page/",
         thumbnail: "Pictures/King of Tokyo Rulebook/King of Tokyo.png",
         title: "King of Tokyo Rulebook",
-        languages: ["HTML: ", "CSS: "],
+        languages: ["HTML: 83.7%", "CSS: 16.3%"],
         date: "2/4/24",
         purpose: "RWD Cert. Project",
         images: ["Pictures/King of Tokyo Rulebook/King of Tokyo.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 1.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 2.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 3.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 4.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 5.png", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 6", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 7", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 8"],
@@ -92,55 +92,55 @@ const data = [
         href: "https://chadharper811.github.io/Harpers_Adventures_JS/",
         thumbnail: "Pictures/Harper's Adventures JS/Harper's Adventures JS.png",
         title: "Harper's Adventures JS Update",
-        languages: ["HTML: ", "CSS: "],
+        languages: ["HTML: 6.2%", "CSS: 11.1%", "JavaScript: 82.7%"],
         date: "8/12/24",
         purpose: "Personal Project",
         images: ["Pictures/Harper's Adventures JS/Harper's Adventures JS.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 1.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 2.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 3.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 4.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 5.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 6.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 7.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 8.png", "Pictures/Harper's Adventures JS/Harper's Adventures JS 9.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/Harpers_Adventures_JS"
     },
     {
         id: 9,
         href: "https://chadharper811.github.io/roman_numeral_converter/",
         thumbnail: "Pictures/Roman Numeral Converter/Roman Numeral Converter.png",
         title: "Roman Numeral Converter",
-        languages: ["HTML: ", "CSS: "],
+        languages: ["HTML: 19.6%", "CSS: 29.4%", "JavaScript: 51%"],
         date: "8/24/24",
         purpose: "JSADS Cert.",
         images: ["Pictures/Roman Numeral Converter/Roman Numeral Converter.png", "Pictures/Roman Numeral Converter/Roman Numeral Converter 1.png", "Pictures/Roman Numeral Converter/Roman Numeral Converter 2.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/roman_numeral_converter"
     },
     {
         id: 10,
         href: "https://chadharper811.github.io/telephone_number_validator/",
         thumbnail: "Pictures/Telephone Number Validator/Telephone Number Validator.png",
         title: "Telephone Number Validator",
-        languages: ["HTML: ", "CSS: "],
+        languages: ["HTML: 31.8%", "CSS: 45.8%", "JavaScript: 22.4%"],
         date: "9/2/24",
         purpose: "JSADS Cert.",
         images: ["Pictures/Telephone Number Validator/Telephone Number Validator.png", "Pictures/Telephone Number Validator/Telephone Number Validator 1.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/telephone_number_validator"
     },
     {
         id: 11,
         href: "https://chadharper811.github.io/Updated-Resume/",
         thumbnail: "Pictures/Updated Resume/Updated Resume.png",
         title: "Updated Resume Website",
-        languages: ["HTML: ", "CSS: "],
+        languages: ["HTML: 54%", "CSS: 15.7%", "JavaScript: 30.3%"],
         date: "8/20/24",
         purpose: "Personal Project",
         images: ["Pictures/Updated Resume/Updated Resume.png", "Pictures/Updated Resume/Updated Resume 1.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/Updated-Resume"
     },
     {
         id: 12,
         href: "https://chadharper811.github.io/cash_register/",
         thumbnail: "Pictures/Cash Register/Cash Register.png",
         title: "Cash Register",
-        languages: ["HTML: ", "CSS: "],
+        languages: ["HTML: 48.1%", "CSS: 23.8%", "JavaScript: 28.1%"],
         date: "11/16/24",
         purpose: "JSADS Cert.",
         images: ["Pictures/Cash Register/Cash Register.png", "Pictures/Cash Register/Cash Register 1.png", "Pictures/Cash Register/Cash Register 2.png", "Pictures/Cash Register/Cash Register 3.png"],
-        code: ""
+        code: "https://github.com/ChadHarper811/cash_register"
     },
     {
         text: "Email",
@@ -180,11 +180,16 @@ const modalInfo = document.getElementById("modalInfo");
 const allProjects = document.getElementsByClassName("project-tile");
 
 data.filter(el => el.href).forEach(
-    ({thumbnail, title, date, purpose}) => {
+    ({thumbnail, title, date, purpose, languages}) => {
         projects.innerHTML += `
         <div class="project-tile">
             <img class="projectImg" src="${thumbnail}" alt="${title}"/>
-             <h3> <span class="hover">&lt;</span> ${title} <span class="hover">&#47;&gt;</span> </h3> 
+            <h3> <span class="hover">&lt;</span> ${title} <span class="hover">&#47;&gt;</span> </h3>
+            <div class="languages">
+            ${languages.map((e) => 
+                `<p>${e}</p>`
+            ).join(" | ")}
+            </div>
             <p>Completed: ${date} For: ${purpose}</p>
         </div>
         `
