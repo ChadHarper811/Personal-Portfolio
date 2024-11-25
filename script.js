@@ -235,10 +235,6 @@ const allProjectDivLanguages = document.getElementsByClassName("divLang");
             const projectID = event.target.parentNode.parentNode.id
             modal.style.display = "block";
             modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
-            modalInfo.innerHTML = 
-            `
-            <p>test id</p>
-            `
         })
     }
 )
@@ -252,10 +248,6 @@ const allProjectDivElements = document.getElementsByClassName("divEl");
             const projectID = event.target.parentNode.id
             modal.style.display = "block";
             modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
-            modalInfo.innerHTML = 
-            `
-            <p>test id</p>
-            `
         })
     }
 )
@@ -268,10 +260,6 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
             const projectID = event.target.id
             modal.style.display = "block";
             modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
-            modalInfo.innerHTML = 
-            `
-            <p>test id</p>
-            `
         })
     }
 )
