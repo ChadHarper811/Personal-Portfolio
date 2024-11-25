@@ -143,15 +143,15 @@ const data = [
         code: "https://github.com/ChadHarper811/cash_register"
     },
     {
-        id: "Launch_Code Cert",
+        id: "LaunchCodeCert",
+        image: "Pictures/Certificates/LaunchCode Web Dev Cert.png"
+    },
+    {
+        id: "freeCodeCampRWDCert",
         image: "Pictures/Certificates/freeCodeCamp Responsive Web Design Cert.png"
     },
     {
-        id: "freeCodeCamp RWD Cert",
-        image: "Pictures/Certificates/freeCodeCamp Responsive Web Design Cert.png"
-    },
-    {
-        id: "freeCodeCamp JSADS Cert",
+        id: "freeCodeCampJSADSCert",
         image: "Pictures/Certificates/freeCodeCamp Responsive Web Design Cert.png"
     },
     {
@@ -189,6 +189,25 @@ const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
 const modalInfo = document.getElementById("modalInfo");
+const launchCodeCert = document.getElementById("LaunchCodeCert");
+const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
+const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
+
+
+[launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert].forEach(
+    (span) => {
+        span.addEventListener("click", (event) => {
+            const projectID = event.target.id
+            console.log(projectID)
+            modal.style.display = "block";
+            modalImg.src = data.filter(el => el.id === projectID)[0].image;
+            modalInfo.innerHTML = 
+            `
+            <p>test id</p>
+            `
+        })
+    }
+)
 
 data.filter(el => el.href).forEach(
     ({id, thumbnail, title, date, purpose, languages}) => {
@@ -256,8 +275,6 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
         })
     }
 )
-
-
 
 closeBtn.addEventListener("click", () => {
     modal.style.display = "none";

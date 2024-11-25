@@ -74,6 +74,11 @@ P {
     padding: 20vh 50px 0 50px;
 }
 
+.certificate {
+    color: var(--light_gray);
+    cursor: pointer;
+}
+
 .projects a:link, a:visited {
     color: var(--light_gray);
 }
@@ -106,6 +111,7 @@ P {
     box-shadow: 0px 8px 16px 0px black;
     transform: translateY(-5px);
     transition: 0.4s ease-out;
+    cursor: pointer;
 }
 
 .project-tile > h3 > .hover {
@@ -145,6 +151,7 @@ P {
     display: block;
     width: 90%;
     max-width: 1100px;
+    max-height: 800px;
 }
 
 #modalInfo {
