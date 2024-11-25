@@ -143,6 +143,18 @@ const data = [
         code: "https://github.com/ChadHarper811/cash_register"
     },
     {
+        id: "Launch_Code Cert",
+        image: "Pictures/Certificates/freeCodeCamp Responsive Web Design Cert.png"
+    },
+    {
+        id: "freeCodeCamp RWD Cert",
+        image: "Pictures/Certificates/freeCodeCamp Responsive Web Design Cert.png"
+    },
+    {
+        id: "freeCodeCamp JSADS Cert",
+        image: "Pictures/Certificates/freeCodeCamp Responsive Web Design Cert.png"
+    },
+    {
         text: "Email",
         icon: "fa-solid fa-envelope",
         link: "mailto: chadharper811@gmail.com",
@@ -177,24 +189,81 @@ const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
 const modalInfo = document.getElementById("modalInfo");
-const allProjects = document.getElementsByClassName("project-tile");
 
 data.filter(el => el.href).forEach(
-    ({thumbnail, title, date, purpose, languages}) => {
+    ({id, thumbnail, title, date, purpose, languages}) => {
         projects.innerHTML += `
-        <div class="project-tile">
-            <img class="projectImg" src="${thumbnail}" alt="${title}"/>
-            <h3> <span class="hover">&lt;</span> ${title} <span class="hover">&#47;&gt;</span> </h3>
-            <div class="languages">
+        <div id="${id}" class="project-tile">
+            <img class="projectImg divEl" src="${thumbnail}" alt="${title}"/>
+            <h3 class="divEl"> <span class="hover">&lt;</span> ${title} <span class="hover">&#47;&gt;</span> </h3>
+            <div class="languages divEl">
             ${languages.map((e) => 
-                `<p>${e}</p>`
+                `<p class="divLang">${e}</p>`
             ).join(" | ")}
             </div>
-            <p>Completed: ${date} For: ${purpose}</p>
+            <p class="divEl">Completed: ${date} For: ${purpose}</p>
         </div>
         `
     }
 )
+
+const allProjectDivLanguages = document.getElementsByClassName("divLang");
+
+[...allProjectDivLanguages].forEach(
+    (div) => {
+        div.addEventListener("click", (event) => {
+            event.stopPropagation()
+            const projectID = event.target.parentNode.parentNode.id
+            modal.style.display = "block";
+            modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
+            modalInfo.innerHTML = 
+            `
+            <p>test id</p>
+            `
+        })
+    }
+)
+
+const allProjectDivElements = document.getElementsByClassName("divEl");
+
+[...allProjectDivElements].forEach(
+    (div) => {
+        div.addEventListener("click", (event) => {
+            event.stopPropagation()
+            const projectID = event.target.parentNode.id
+            modal.style.display = "block";
+            modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
+            modalInfo.innerHTML = 
+            `
+            <p>test id</p>
+            `
+        })
+    }
+)
+
+const allProjectDivs = document.getElementsByClassName("project-tile");
+
+[...allProjectDivs].forEach(
+    (div) => {
+        div.addEventListener("click", (event) => {
+            const projectID = event.target.id
+            modal.style.display = "block";
+            modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
+            modalInfo.innerHTML = 
+            `
+            <p>test id</p>
+            `
+        })
+    }
+)
+
+
+
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    modalImg.src = "";
+    modalInfo.innerHTML = "";
+})
 
 data.filter(el => el.icon).forEach(
     ({id, icon, link, text}) => {

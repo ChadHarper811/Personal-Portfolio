@@ -122,12 +122,9 @@ P {
     width: 350px;
 }
 
-.languages {
-    display: block;
-}
-
 .languages > p {
     display: inline-block;
+    margin: 0px 0px 0px 0px;
 }
 
 #modal {
@@ -146,8 +143,8 @@ P {
 #modalImg {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 90%;
+    max-width: 1100px;
 }
 
 #modalInfo {
