@@ -234,7 +234,6 @@ const galleryDisplay = (projectID) => {
         `
         <div class="gallerySlide fade">
             <div class="slideNum">${index + 1} / ${fullArray.length}</div>
-            <div id="dots"></div>
             <img class="gallery-imgs" src="${image}" />
         </div>
         `

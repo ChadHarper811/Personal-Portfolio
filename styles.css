@@ -181,27 +181,28 @@ P {
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
     color: var(--white);
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .close:hover, .close:focus {
     color: var(--orange);
-    text-decoration: none;
     cursor: pointer;
 }
 
+.modalBtn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
 
 #gallery-container {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 40px;
+    padding-top: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -210,43 +211,51 @@ P {
     background-color: rgba(0,0,0,0.8);
 }
 
+.galleryBtn {
+    float: right;
+    padding: -10px 0;
+    margin: -10px 0;
+}
+
+#dots {
+    display: inline-flex;
+}
+
 .dots {
     cursor: pointer;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     margin: 0 2px;
-    background-color: var(--gray);
+    background-color: var(--light_gray);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active, .dots:hover {
-    background-color: var(--light_gray);
+    background-color: var(--orange);
 }
 
 .slideNum {
+    display: inline-flex;
     color: var(--orange);
-    font-weight: bold;
-    text-shadow: 1px 1px 2px black;
-    padding: 8px 12px;
     position: absolute;
+    margin-top: -20px;
 }
 
-.gallery-imgs {
-    width: 100%;
-    height: auto;
-}
-
-.gallerySlide {
-    z-index: 1;
+.gallery {
     margin: auto;
-    display: block;
     width: 90%;
     max-width: 1100px;
     max-height: 800px;
     animation-name: zoom;
     animation-duration: 0.6s;
+}
+
+.gallery-imgs {
+    width: 100%;
+    max-width: 1100px;
+    max-height: 800px;
 }
 
 .fade {
