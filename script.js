@@ -191,8 +191,8 @@ const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
 const modalInfo = document.getElementById("modalInfo");
-const galleryContainer = document.getElementById("gallery-container");
-const gallery = document.getElementById("gallery");
+const galleryContainer = document.getElementById("gallery-container")
+const gallery = document.getElementById("gallery-img");
 const dots = document.getElementById("dots");
 const contactLinks = document.getElementById("contactLinks");
 
@@ -227,12 +227,14 @@ data.filter(el => el.href).forEach(
 
 const galleryDisplay = (projectID) => {
     document.body.classList.add("stop-scrolling");
+    galleryContainer.style.display = "block";
+
     data.filter(el => el.id === Number(projectID))[0].images.forEach((image, index, fullArray) => {
-        galleryContainer.style.display = "block";
         gallery.innerHTML += 
         `
         <div class="gallerySlide fade">
             <div class="slideNum">${index + 1} / ${fullArray.length}</div>
+            <div id="dots"></div>
             <img class="gallery-imgs" src="${image}" />
         </div>
         `
@@ -285,6 +287,7 @@ const closeBtns = document.getElementsByClassName("close");
         btn.addEventListener("click", () => {
             galleryContainer.style.display = "none";
             gallery.innerHTML = "";
+            dots.innerHTML = "";
             modal.style.display = "none";
             modalImg.src = "";
             modalInfo.innerHTML = "";

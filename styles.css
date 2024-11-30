@@ -210,7 +210,36 @@ P {
     background-color: rgba(0,0,0,0.8);
 }
 
+.dots {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dots:hover {
+    background-color: var(--light_gray);
+}
+
+.slideNum {
+    color: var(--orange);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    padding: 8px 12px;
+    position: absolute;
+}
+
 .gallery-imgs {
+    width: 100%;
+    height: auto;
+}
+
+.gallerySlide {
+    z-index: 1;
     margin: auto;
     display: block;
     width: 90%;
@@ -229,20 +258,6 @@ P {
     to {opacity: 1;}
 }
 
-.dots {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: var(--gray);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dots:hover {
-    background-color: var(--light_gray);
-}
 
 .info > a > .hover {
     color: var(--blue);
