@@ -183,22 +183,23 @@ const data = [
     
 ]
 
-const contactLinks = document.getElementById("contactLinks");
+const launchCodeCert = document.getElementById("LaunchCodeCert");
+const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
+const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
 const projectsSection = document.getElementById("projectsSection");
 const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
 const modalInfo = document.getElementById("modalInfo");
-const launchCodeCert = document.getElementById("LaunchCodeCert");
-const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
-const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
+const galleryContainer = document.getElementById("gallery-container")
+const gallery = document.getElementById("gallery");
+const contactLinks = document.getElementById("contactLinks");
 
 
 [launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert].forEach(
     (span) => {
         span.addEventListener("click", (event) => {
             const projectID = event.target.id
-            console.log(projectID)
             modal.style.display = "block";
             modalImg.src = data.filter(el => el.id === projectID)[0].image;
         })
@@ -222,6 +223,19 @@ data.filter(el => el.href).forEach(
     }
 )
 
+const galleryDisplay = (projectID) => {
+    data.filter(el => el.id === Number(projectID))[0].images.forEach((image) => {
+        console.log("open");
+        galleryContainer.style.display = "block";
+        gallery.innerHTML += 
+        `
+        <div>
+            <h1>Test </h1>
+        </div>
+        `
+    })
+}
+
 const modalDisplay = (projectID) => {
     modal.style.display = "block";
     modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
@@ -243,7 +257,7 @@ const allProjectDivLanguages = document.getElementsByClassName("divLang");
         div.addEventListener("click", (event) => {
             const projectID = event.target.parentNode.parentNode.id;
             event.stopPropagation();
-            modalDisplay(projectID);
+            galleryDisplay(projectID);
         })
     }
 )
@@ -255,7 +269,7 @@ const allProjectDivElements = document.getElementsByClassName("divEl");
         div.addEventListener("click", (event) => {
             const projectID = event.target.parentNode.id;
             event.stopPropagation();
-            modalDisplay(projectID);
+            galleryDisplay(projectID);
         })
     }
 )
@@ -266,19 +280,28 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
     (div) => {
         div.addEventListener("click", (event) => {
             const projectID = event.target.id;
-            modalDisplay(projectID);
+            galleryDisplay(projectID);
         })
     }
 )
 
-closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    modalImg.src = "";
-    modalInfo.innerHTML = "";
-})
+const closeBtns = document.getElementsByClassName("close");
+
+[...closeBtns].forEach(
+    (btn) => {
+        btn.addEventListener("click", () => {
+            console.log("close");
+            galleryContainer.style.display = "none";
+            gallery.innerHTML = "";
+            modal.style.display = "none";
+            modalImg.src = "";
+            modalInfo.innerHTML = "";
+        })
+    }
+)
 
 data.filter(el => el.icon).forEach(
-    ({id, icon, link, text}) => {
+    ({icon, link, text}) => {
         contactLinks.innerHTML += `
         <div class="info"> 
             <a href="${link}" class="contact-details"> <span class="hover">&lt;</span><i class="${icon}"></i>${text}<span class="hover">&#47;&gt;</span> </a>
