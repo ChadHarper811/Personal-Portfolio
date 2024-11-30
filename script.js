@@ -191,8 +191,9 @@ const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
 const modalInfo = document.getElementById("modalInfo");
-const galleryContainer = document.getElementById("gallery-container")
+const galleryContainer = document.getElementById("gallery-container");
 const gallery = document.getElementById("gallery");
+const dots = document.getElementById("dots");
 const contactLinks = document.getElementById("contactLinks");
 
 
@@ -234,6 +235,10 @@ const galleryDisplay = (projectID) => {
             <div class="slideNum">${index + 1} / ${fullArray.length}</div>
             <img class="gallery-imgs" src="${image}" />
         </div>
+        `
+        dots.innerHTML += 
+        `
+        <span class="dots"></span>
         `
     })
 };

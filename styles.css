@@ -84,6 +84,7 @@ P {
     cursor: pointer;
 }
 
+
 .projects a:link, a:visited {
     color: var(--light_gray);
 }
@@ -102,7 +103,6 @@ P {
     gap: 50px;
     max-width: 1500px;
 }
-
 
 .project-tile {
     color: var(--light_gray);
@@ -137,6 +137,7 @@ P {
     display: inline-block;
     margin: 0px 0px 0px 0px;
 }
+
 
 #modal {
     display: none;
@@ -195,6 +196,7 @@ P {
     cursor: pointer;
 }
 
+
 #gallery-container {
     display: block;
     position: fixed;
@@ -216,6 +218,30 @@ P {
     max-height: 800px;
     animation-name: zoom;
     animation-duration: 0.6s;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .6;}
+    to {opacity: 1;}
+}
+
+.dots {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dots:hover {
+    background-color: var(--light_gray);
 }
 
 .info > a > .hover {
