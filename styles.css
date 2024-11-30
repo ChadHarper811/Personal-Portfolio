@@ -204,6 +204,8 @@ P {
     background-color: rgba(0,0,0,0.8);
 }
 
+
+
 .info > a > .hover {
     color: var(--blue);
 }

@@ -224,30 +224,15 @@ data.filter(el => el.href).forEach(
 )
 
 const galleryDisplay = (projectID) => {
-    data.filter(el => el.id === Number(projectID))[0].images.forEach((image) => {
-        console.log("open");
+    data.filter(el => el.id === Number(projectID))[0].images.forEach((image, index, fullArray) => {
         galleryContainer.style.display = "block";
         gallery.innerHTML += 
         `
-        <div>
-            <h1>Test </h1>
+        <div class="gallerySlide fade">
+            <div class="slideNum">${index + 1} / ${fullArray.length}</div>
         </div>
         `
     })
-}
-
-const modalDisplay = (projectID) => {
-    modal.style.display = "block";
-    modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
-    modalInfo.innerHTML = 
-        `
-        <div class="info"> 
-            <a href="${data.filter(el => el.id === Number(projectID))[0].href}" class="contact-details"> <span class="hover">&lt;</span>Site Link<span class="hover">&#47;&gt;</span> </a>
-        </div>
-        <div class="info"> 
-            <a href="${data.filter(el => el.id === Number(projectID))[0].code}" class="contact-details"> <span class="hover">&lt;</span>Code Link<span class="hover">&#47;&gt;</span> </a>
-        </div>
-         `
 }
 
 const allProjectDivLanguages = document.getElementsByClassName("divLang");
@@ -290,7 +275,6 @@ const closeBtns = document.getElementsByClassName("close");
 [...closeBtns].forEach(
     (btn) => {
         btn.addEventListener("click", () => {
-            console.log("close");
             galleryContainer.style.display = "none";
             gallery.innerHTML = "";
             modal.style.display = "none";
