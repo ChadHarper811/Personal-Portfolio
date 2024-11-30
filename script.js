@@ -59,7 +59,7 @@ const data = [
         href: "https://github.com/ChadHarper811/BookMaster",
         thumbnail: "Pictures/BookMaster/BookMaster.png",
         title: "BookMaster React App",
-        languages: ["React", "Bootstrap", "Java", "SpringBoot", "MySQL" ],
+        languages: ["React", "Bootsrtap", "Java", "SpringBoot", "MySQL" ],
         date: "1/22/24",
         purpose: "LaunchCode Group Project",
         images: ["Pictures/BookMaster/BookMaster.png", "Pictures/BookMaster/BookMaster 1.png", "Pictures/BookMaster/BookMaster 2.png", "Pictures/BookMaster/BookMaster 3.png", "Pictures/BookMaster/BookMaster 4.png", "Pictures/BookMaster/BookMaster 5.png", "Pictures/BookMaster/BookMaster 6.png", "Pictures/BookMaster/BookMaster 7.png", "Pictures/BookMaster/BookMaster 8.png", "Pictures/BookMaster/BookMaster 9.png"],
@@ -188,6 +188,7 @@ const projectsSection = document.getElementById("projectsSection");
 const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
+const modalInfo = document.getElementById("modalInfo");
 const launchCodeCert = document.getElementById("LaunchCodeCert");
 const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
 const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
