@@ -199,6 +199,7 @@ const contactLinks = document.getElementById("contactLinks");
 [launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert].forEach(
     (span) => {
         span.addEventListener("click", (event) => {
+            document.body.classList.add("stop-scrolling");
             const projectID = event.target.id
             modal.style.display = "block";
             modalImg.src = data.filter(el => el.id === projectID)[0].image;
@@ -224,16 +225,18 @@ data.filter(el => el.href).forEach(
 )
 
 const galleryDisplay = (projectID) => {
+    document.body.classList.add("stop-scrolling");
     data.filter(el => el.id === Number(projectID))[0].images.forEach((image, index, fullArray) => {
         galleryContainer.style.display = "block";
         gallery.innerHTML += 
         `
         <div class="gallerySlide fade">
             <div class="slideNum">${index + 1} / ${fullArray.length}</div>
+            <img class="gallery-imgs" src="${image}" />
         </div>
         `
     })
-}
+};
 
 const allProjectDivLanguages = document.getElementsByClassName("divLang");
 
@@ -280,6 +283,7 @@ const closeBtns = document.getElementsByClassName("close");
             modal.style.display = "none";
             modalImg.src = "";
             modalInfo.innerHTML = "";
+            document.body.classList.remove("stop-scrolling");
         })
     }
 )
