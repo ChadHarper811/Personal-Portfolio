@@ -222,15 +222,28 @@ data.filter(el => el.href).forEach(
     }
 )
 
+const modalDisplay = (projectID) => {
+    modal.style.display = "block";
+    modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
+    modalInfo.innerHTML = 
+        `
+        <div class="info"> 
+            <a href="${data.filter(el => el.id === Number(projectID))[0].href}" class="contact-details"> <span class="hover">&lt;</span>Site Link<span class="hover">&#47;&gt;</span> </a>
+        </div>
+        <div class="info"> 
+            <a href="${data.filter(el => el.id === Number(projectID))[0].code}" class="contact-details"> <span class="hover">&lt;</span>Code Link<span class="hover">&#47;&gt;</span> </a>
+        </div>
+         `
+}
+
 const allProjectDivLanguages = document.getElementsByClassName("divLang");
 
 [...allProjectDivLanguages].forEach(
     (div) => {
         div.addEventListener("click", (event) => {
-            event.stopPropagation()
-            const projectID = event.target.parentNode.parentNode.id
-            modal.style.display = "block";
-            modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
+            const projectID = event.target.parentNode.parentNode.id;
+            event.stopPropagation();
+            modalDisplay(projectID);
         })
     }
 )
@@ -240,10 +253,9 @@ const allProjectDivElements = document.getElementsByClassName("divEl");
 [...allProjectDivElements].forEach(
     (div) => {
         div.addEventListener("click", (event) => {
-            event.stopPropagation()
-            const projectID = event.target.parentNode.id
-            modal.style.display = "block";
-            modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
+            const projectID = event.target.parentNode.id;
+            event.stopPropagation();
+            modalDisplay(projectID);
         })
     }
 )
@@ -253,9 +265,8 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
 [...allProjectDivs].forEach(
     (div) => {
         div.addEventListener("click", (event) => {
-            const projectID = event.target.id
-            modal.style.display = "block";
-            modalImg.src = data.filter(el => el.id === Number(projectID))[0].images[0];
+            const projectID = event.target.id;
+            modalDisplay(projectID);
         })
     }
 )
