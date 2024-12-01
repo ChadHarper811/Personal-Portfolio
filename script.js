@@ -192,8 +192,10 @@ const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
 const modalInfo = document.getElementById("modalInfo");
 const galleryContainer = document.getElementById("gallery-container")
-const gallery = document.getElementById("gallery-img");
+const galleryImgs = document.getElementById("gallery-imgs");
 const dots = document.getElementById("dots");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next")
 const contactLinks = document.getElementById("contactLinks");
 
 
@@ -229,8 +231,10 @@ const galleryDisplay = (projectID) => {
     document.body.classList.add("stop-scrolling");
     galleryContainer.style.display = "block";
 
+    calcBtnsPositions()
+
     data.filter(el => el.id === Number(projectID))[0].images.forEach((image, index, fullArray) => {
-        gallery.innerHTML += 
+        galleryImgs.innerHTML += 
         `
         <div class="gallerySlide fade">
             <div class="slideNum">${index + 1} / ${fullArray.length}</div>
@@ -279,13 +283,21 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
     }
 )
 
+const calcBtnsPositions = () => {
+    const galleryWidth = galleryImgs.offsetWidth
+    const viewPortWidth = document.body.offsetWidth
+    
+    nextBtn.style.right = Number((viewPortWidth - galleryWidth) / 2) + "px";
+    prevBtn.style.left = Number((viewPortWidth - galleryWidth) / 2) + "px";
+}
+
 const closeBtns = document.getElementsByClassName("close");
 
 [...closeBtns].forEach(
     (btn) => {
         btn.addEventListener("click", () => {
             galleryContainer.style.display = "none";
-            gallery.innerHTML = "";
+            galleryImgs.innerHTML = "";
             dots.innerHTML = "";
             modal.style.display = "none";
             modalImg.src = "";
@@ -303,4 +315,6 @@ data.filter(el => el.icon).forEach(
         </div>
         `
     }
-)
+);
+
+window.addEventListener("resize", calcBtnsPositions)
