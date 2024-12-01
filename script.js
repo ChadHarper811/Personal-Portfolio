@@ -230,8 +230,7 @@ data.filter(el => el.href).forEach(
 const galleryDisplay = (projectID) => {
     document.body.classList.add("stop-scrolling");
     galleryContainer.style.display = "block";
-
-    calcBtnsPositions()
+    calcBtnsPositions();
 
     data.filter(el => el.id === Number(projectID))[0].images.forEach((image, index, fullArray) => {
         galleryImgs.innerHTML += 
@@ -239,6 +238,13 @@ const galleryDisplay = (projectID) => {
         <div class="gallerySlide fade">
             <div class="slideNum">${index + 1} / ${fullArray.length}</div>
             <img class="gallery-imgs" src="${image}" />
+
+            <div class="info"> 
+                <a href="${data.filter(el => el.id === Number(projectID))[0].href}" class="contact-details"> <span class="hover">&lt;</span>Site Link<span class="hover">&#47;&gt;</span> </a>
+            </div>
+            <div class="info"> 
+                <a href="${data.filter(el => el.id === Number(projectID))[0].code}" class="contact-details"> <span class="hover">&lt;</span>Code Link<span class="hover">&#47;&gt;</span> </a>
+            </div>
         </div>
         `
         dots.innerHTML += 
