@@ -320,24 +320,15 @@ footer {
 
 @media only screen and (max-width: 790px) and (orientation: landscape) {
     html {
-        scroll-padding-top: 12vh;
+        scroll-padding-top: 13vh;
     }
 
     #navbar li a {
-        padding: 10px 20px;
+        padding: 10px 24px;
     }
 
     .welcomeSectionText {
         padding-top: 22vh;
-    }
-
-    .aboutMeSection {
-        padding: 1vh 5vw 60vh 5vw;
-    }
-
-    #modalImg {
-        width: auto;
-        max-height: 85vh;
     }
 
     .gallery {
@@ -345,18 +336,9 @@ footer {
         max-width: 55vw;
     }
 
-    .gallery-imgs {
-        width: auto;
-        max-height: 75vh;
-    }
-
     .dots {
         height: 10px;
         width: 10px;
-    }
-
-    .info {
-        font-size: 20px;
     }
 
     #prev, #next {
@@ -365,8 +347,7 @@ footer {
     }
 
     .contactSection {
-        height: 50vh;
-        padding: 5vh 5vw 20vh 5vw;
+        padding: 1vh 5vw 5vh 5vw;
     }
 }
 
