@@ -190,7 +190,6 @@ const projectsSection = document.getElementById("projectsSection");
 const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
-const modalInfo = document.getElementById("modalInfo");
 const galleryContainer = document.getElementById("gallery-container")
 const galleryImgs = document.getElementById("gallery-imgs");
 const dotsDiv = document.getElementById("dots");
@@ -344,7 +343,6 @@ const closeBtns = document.getElementsByClassName("close");
             dotsDiv.innerHTML = "";
             modal.style.display = "none";
             modalImg.src = "";
-            modalInfo.innerHTML = "";
             document.body.classList.remove("stop-scrolling");
             slideIndex = 1;
         })
