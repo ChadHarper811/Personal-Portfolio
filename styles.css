@@ -213,8 +213,8 @@ P {
 
 .dots {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: var(--light_gray);
     border-radius: 50%;
@@ -235,7 +235,7 @@ P {
 
 .gallery {
     margin: auto;
-    max-width: 90vw;
+    max-width: 80vw;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -336,11 +336,6 @@ footer {
         max-width: 55vw;
     }
 
-    .dots {
-        height: 10px;
-        width: 10px;
-    }
-
     #prev, #next {
         padding: 12px;
         font-size: 16px;
@@ -362,11 +357,6 @@ footer {
 
     .welcomeSectionText {
         padding-top: 22vh;
-    }
-
-    .dots {
-        height: 10px;
-        width: 10px;
     }
 
     #prev, #next {
