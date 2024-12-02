@@ -235,7 +235,7 @@ P {
 
 .gallery {
     margin: auto;
-    max-width: 72vw;
+    max-width: 90vw;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -383,42 +383,14 @@ footer {
         padding-top: 22vh;
     }
 
-    .aboutMeSection {
-        padding: 1vh 5vw 1vh 5vw;
-    }
-
-    #modalImg {
-        width: auto;
-        max-height: 85vh;
-    }
-
-    .gallery {
-        width: auto;
-        max-width: 90vw;
-    }
-
-    .gallery-imgs {
-        width: auto;
-        max-height: 75vh;
-        max-width: 100%;
-    }
-
     .dots {
         height: 10px;
         width: 10px;
     }
 
-    .info {
-        font-size: 20px;
-    }
-
     #prev, #next {
         padding: 12px;
         font-size: 16px;
-    }
-
-    .contactSection {
-        padding: 20vh 5vw 1vh 5vw;
     }
 }
 
