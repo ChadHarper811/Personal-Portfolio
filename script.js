@@ -62,7 +62,7 @@ const data = [
         languages: ["React", "Bootsrtap", "Java", "SpringBoot", "MySQL" ],
         date: "1/22/24",
         purpose: "LaunchCode Group Project",
-        images: ["Pictures/BookMaster/BookMaster.png", "Pictures/BookMaster/BookMaster 1.png", "Pictures/BookMaster/BookMaster 2.png", "Pictures/BookMaster/BookMaster 3.png", "Pictures/BookMaster/BookMaster 4.png", "Pictures/BookMaster/BookMaster 5.png", "Pictures/BookMaster/BookMaster 6.png", "Pictures/BookMaster/BookMaster 7.png", "Pictures/BookMaster/BookMaster 8.png", "Pictures/BookMaster/BookMaster 9.png"],
+        images: ["Pictures/BookMaster/BookMaster.png", "Pictures/BookMaster/BookMaster 1.png", "Pictures/BookMaster/BookMaster 2.png", "Pictures/BookMaster/BookMaster 3.png", "Pictures/BookMaster/BookMaster 4.png", "Pictures/BookMaster/BookMaster 5.png", "Pictures/BookMaster/BookMaster 6.png", "Pictures/BookMaster/BookMaster 7.png"],
         code: "https://github.com/ChadHarper811/BookMaster"
     },
     {
