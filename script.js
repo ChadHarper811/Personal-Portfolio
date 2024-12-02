@@ -312,13 +312,12 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
 
 const calcBtnsPositions = () => {
     const galleryWidth = galleryImgs.offsetWidth;
-    const viewPortHeight = document.body.offsetHeight;
     const viewPortWidth = document.body.offsetWidth;
     const viewport = document.getElementById("viewport")
 
     viewport.innerHTML = 
     `
-    <p> width: ${viewPortWidth} height: ${viewPortHeight}</p>
+    <p>width: ${window.innerWidth} height: ${window.innerHeight}</p>
     `
     
     nextBtn.style.right = Number((viewPortWidth - galleryWidth) / 2) + "px";
@@ -368,5 +367,5 @@ const prevClick = prevBtn.addEventListener("click", () => {
 
 viewport.innerHTML = 
     `
-    <p> width: ${document.body.offsetWidth} height: ${document.body.offsetHeight}</p>
+    <p>width: ${window.innerWidth} height: ${window.innerHeight}</p>
     `
