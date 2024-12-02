@@ -249,7 +249,6 @@ const showSlide = (n) => {
 const galleryDisplay = (projectID) => {
     document.body.classList.add("stop-scrolling");
     galleryContainer.style.display = "block";
-    calcBtnsPositions();
 
     data.filter(el => el.id === Number(projectID))[0].images.forEach((image, index, fullArray) => {
         galleryImgs.innerHTML += 
@@ -273,6 +272,7 @@ const galleryDisplay = (projectID) => {
         
     })
     showSlide(slideIndex);
+    calcBtnsPositions();
 };
 
 const allProjectDivLanguages = document.getElementsByClassName("divLang");
@@ -312,10 +312,13 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
 
 const calcBtnsPositions = () => {
     const galleryWidth = galleryImgs.offsetWidth;
-    const viewPortWidth = document.body.offsetWidth;
+    const gallerHeight = galleryImgs.offsetHeight;
+    const windowWidth = window.innerWidth;
 
-    nextBtn.style.right = Number((viewPortWidth - galleryWidth) / 2) + "px";
-    prevBtn.style.left = Number((viewPortWidth - galleryWidth) / 2) + "px";
+    nextBtn.style.right = Number((windowWidth - galleryWidth) / 2) + "px";
+    nextBtn.style.top = Number(gallerHeight / 2) + "px";
+    prevBtn.style.left = Number((windowWidth - galleryWidth) / 2) + "px";
+    prevBtn.style.top = Number(gallerHeight / 2) + "px";
 }
 
 
