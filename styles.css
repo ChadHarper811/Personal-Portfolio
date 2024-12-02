@@ -181,7 +181,7 @@ P {
 }
 
 .close {
-    color: var(--white);
+    color: var(--light_gray);
     font-size: 40px;
     font-weight: bold;
     transition: 0.4s;

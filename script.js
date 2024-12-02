@@ -193,10 +193,11 @@ const modalImg = document.getElementById("modalImg");
 const modalInfo = document.getElementById("modalInfo");
 const galleryContainer = document.getElementById("gallery-container")
 const galleryImgs = document.getElementById("gallery-imgs");
-const dots = document.getElementById("dots");
+const dotsDiv = document.getElementById("dots");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next")
 const contactLinks = document.getElementById("contactLinks");
+let slideIndex = 1;
 
 
 [launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert].forEach(
@@ -227,6 +228,19 @@ data.filter(el => el.href).forEach(
     }
 )
 
+const showSlide = (n) => {
+    const slides = document.getElementsByClassName("gallerySlide");
+    console.log([...slides])
+    const dots = document.getElementsByClassName("dots");
+    console.log([...dots])
+    if (n > slides.length) {slideIndex = 1};
+    if (n < 1) {slideIndex = slides.length};
+    [...slides].forEach((slide) => {slide.style.display = "none"});
+    [...dots].forEach((dot) => {dot.classList.remove("active")});
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+}
+
 const galleryDisplay = (projectID) => {
     document.body.classList.add("stop-scrolling");
     galleryContainer.style.display = "block";
@@ -247,11 +261,13 @@ const galleryDisplay = (projectID) => {
             </div>
         </div>
         `
-        dots.innerHTML += 
+        dotsDiv.innerHTML += 
         `
         <span class="dots"></span>
         `
+        
     })
+    showSlide(slideIndex);
 };
 
 const allProjectDivLanguages = document.getElementsByClassName("divLang");
@@ -304,7 +320,7 @@ const closeBtns = document.getElementsByClassName("close");
         btn.addEventListener("click", () => {
             galleryContainer.style.display = "none";
             galleryImgs.innerHTML = "";
-            dots.innerHTML = "";
+            dotsDiv.innerHTML = "";
             modal.style.display = "none";
             modalImg.src = "";
             modalInfo.innerHTML = "";
