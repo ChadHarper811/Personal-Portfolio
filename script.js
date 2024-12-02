@@ -230,9 +230,7 @@ data.filter(el => el.href).forEach(
 
 const showSlide = (n) => {
     const slides = document.getElementsByClassName("gallerySlide");
-    console.log([...slides])
     const dots = document.getElementsByClassName("dots");
-    console.log([...dots])
     if (n > slides.length) {slideIndex = 1};
     if (n < 1) {slideIndex = slides.length};
     [...slides].forEach((slide) => {slide.style.display = "none"});
@@ -263,7 +261,7 @@ const galleryDisplay = (projectID) => {
         `
         dotsDiv.innerHTML += 
         `
-        <span class="dots"></span>
+        <span class="dots" id="${index + 1}"></span>
         `
         
     })
@@ -313,6 +311,19 @@ const calcBtnsPositions = () => {
     prevBtn.style.left = Number((viewPortWidth - galleryWidth) / 2) + "px";
 }
 
+
+data.filter(el => el.icon).forEach(
+    ({icon, link, text}) => {
+        contactLinks.innerHTML += `
+        <div class="info"> 
+            <a href="${link}" class="contact-details"> <span class="hover">&lt;</span><i class="${icon}"></i>${text}<span class="hover">&#47;&gt;</span> </a>
+        </div>
+        `
+    }
+);
+
+const resize = window.addEventListener("resize", calcBtnsPositions)
+
 const closeBtns = document.getElementsByClassName("close");
 
 [...closeBtns].forEach(
@@ -325,18 +336,11 @@ const closeBtns = document.getElementsByClassName("close");
             modalImg.src = "";
             modalInfo.innerHTML = "";
             document.body.classList.remove("stop-scrolling");
+            slideIndex = 1;
         })
     }
 )
 
-data.filter(el => el.icon).forEach(
-    ({icon, link, text}) => {
-        contactLinks.innerHTML += `
-        <div class="info"> 
-            <a href="${link}" class="contact-details"> <span class="hover">&lt;</span><i class="${icon}"></i>${text}<span class="hover">&#47;&gt;</span> </a>
-        </div>
-        `
-    }
-);
+const nextClick = nextBtn.addEventListener("click", () => {showSlide(slideIndex += 1)});
+const prevClick = prevBtn.addEventListener("click", () => {showSlide(slideIndex -= 1)});
 
-window.addEventListener("resize", calcBtnsPositions)
