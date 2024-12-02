@@ -357,5 +357,4 @@ const prevClick = prevBtn.addEventListener("click", () => {
     showSlide(slideIndex);
 });
 
-
-
+contactLinks.innerHTML += `<h1>${document.body.offsetWidth}</h1>`
