@@ -333,7 +333,13 @@ footer {
 
     .gallery {
         width: auto;
-        max-width: 50vw;
+        max-width: 45vw;
+    }
+
+    .gallery-imgs {
+        width: 100%;
+        height: auto;
+        max-height: 75vh;
     }
 
     #prev, #next {
