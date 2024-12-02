@@ -62,7 +62,7 @@ P {
 }
 
 .welcomeSection {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(Pictures/background.jpg);
     background-size: cover;
     background-color: black;
@@ -74,9 +74,9 @@ P {
 }
 
 .aboutMeSection {
-    height: 72vh;
+    min-height: 77vh;
     background-color: var(--blue);
-    padding: 20vh 50px 0 50px;
+    padding: 10vh 5vw 5vh 5vw;
 }
 
 .certificate {
@@ -90,6 +90,7 @@ P {
 }
 
 .projectsSection {
+    min-height: 77vh;
     background-color: var(--gray);
     padding: 1px 20px 50px 20px;
 }
@@ -130,7 +131,8 @@ P {
 }
 
 .projectImg {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .languages > p {
@@ -304,16 +306,16 @@ a:link, a:visited {
 }
 
 .contactSection {
-    height: 62vh;
+    min-height: 63vh;
     background-color: var(--blue);
-    padding: 20vh 50px 0 50px;
+    padding: 20vh 5vw 1vh 5vw;
 }
 
 footer {
-    height: 7vh;
+    min-height: 7vh;
     width: 100%;
     background-color: var(--gray);
-    padding: 1px 0 20px 0;
+    padding: 1vh 0 1vh 0;
 }
 
 @media only screen and (max-width: 790px) and (orientation: landscape) {
@@ -330,7 +332,6 @@ footer {
     }
 
     .aboutMeSection {
-        height: 80vh;
         padding: 1vh 5vw 60vh 5vw;
     }
 
@@ -371,11 +372,11 @@ footer {
 
 @media only screen and (max-width: 480px) {
     html {
-        scroll-padding-top: 12vh;
+        scroll-padding-top: 6vh;
     }
 
     #navbar li a {
-        padding: 10px 20px;
+        padding: 12px 12px;
     }
 
     .welcomeSectionText {
@@ -383,8 +384,7 @@ footer {
     }
 
     .aboutMeSection {
-        height: 80vh;
-        padding: 1vh 5vw 60vh 5vw;
+        padding: 1vh 5vw 1vh 5vw;
     }
 
     #modalImg {
@@ -418,50 +418,17 @@ footer {
     }
 
     .contactSection {
-        height: 50vh;
-        padding: 5vh 5vw 20vh 5vw;
+        padding: 20vh 5vw 1vh 5vw;
     }
 }
 
 @media only screen and (max-width: 390px) {
     html {
-        scroll-padding-top: 6vh;
+        scroll-padding-top: 5vh;
     }
 
     #navbar li a {
         font-size: 20px;
-        padding: 10px 14px;
-    }
-
-    .welcomeSectionText {
-        padding-top: 22vh;
-    }
-
-    .aboutMeSection {
-        height: 72vh;
-        padding: 1vh 5vw 60vh 5vw;
-    }
-    
-    .projectImg {
-        width: 100%;
-    }
-
-    .dots {
-        height: 10px;
-        width: 10px;
-    }
-
-    .info {
-        font-size: 20px;
-    }
-
-    #prev, #next {
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .contactSection {
-        height: 65vh;
-        padding: 20vh 5vw 0 5vw;
+        padding: 14px 14px;
     }
 }
