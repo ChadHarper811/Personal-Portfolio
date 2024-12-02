@@ -73,7 +73,7 @@ const data = [
         languages: ["HTML: 83.7%", "CSS: 16.3%"],
         date: "2/4/24",
         purpose: "RWD Cert. Project",
-        images: ["Pictures/King of Tokyo Rulebook/King of Tokyo.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 1.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 2.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 3.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 4.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 5.png", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 6", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 7", "Pictures/King of Tokyo Rulebook/King of Tokyo.png 8"],
+        images: ["Pictures/King of Tokyo Rulebook/King of Tokyo.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 1.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 2.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 3.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 4.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 5.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 6.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 7.png", "Pictures/King of Tokyo Rulebook/King of Tokyo 8.png"],
         code: "https://github.com/ChadHarper811/Technical-Page"
     },
     {
