@@ -192,7 +192,7 @@ P {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 20px;
+    padding-top: 3vh;
     left: 0;
     top: 0;
     width: 100%;
@@ -318,7 +318,7 @@ footer {
     padding: 1vh 0 1vh 0;
 }
 
-@media only screen and (max-width: 790px) and (orientation: landscape) {
+@media only screen and (max-width: 800px) and (orientation: landscape) {
     html {
         scroll-padding-top: 13vh;
     }
@@ -333,7 +333,7 @@ footer {
 
     .gallery {
         width: auto;
-        max-width: 55vw;
+        max-width: 50vw;
     }
 
     #prev, #next {
@@ -343,6 +343,10 @@ footer {
 
     .contactSection {
         padding: 1vh 5vw 5vh 5vw;
+    }
+
+    .info {
+        font-size: 20px;
     }
 }
 
