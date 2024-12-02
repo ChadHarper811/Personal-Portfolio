@@ -237,6 +237,13 @@ const showSlide = (n) => {
     [...dots].forEach((dot) => {dot.classList.remove("active")});
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].classList.add("active");
+    [...dots].forEach(
+        (dot) => {
+            dot.addEventListener("click", (e) => {
+                slideIndex = Number(e.target.id)
+                showSlide(slideIndex)
+            });
+        });
 }
 
 const galleryDisplay = (projectID) => {
@@ -261,7 +268,7 @@ const galleryDisplay = (projectID) => {
         `
         dotsDiv.innerHTML += 
         `
-        <span class="dots" id="${index + 1}"></span>
+        <span class="dots" id="${index + 1}" ></span>
         `
         
     })
@@ -304,8 +311,8 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
 )
 
 const calcBtnsPositions = () => {
-    const galleryWidth = galleryImgs.offsetWidth
-    const viewPortWidth = document.body.offsetWidth
+    const galleryWidth = galleryImgs.offsetWidth;
+    const viewPortWidth = document.body.offsetWidth;
     
     nextBtn.style.right = Number((viewPortWidth - galleryWidth) / 2) + "px";
     prevBtn.style.left = Number((viewPortWidth - galleryWidth) / 2) + "px";
@@ -341,6 +348,14 @@ const closeBtns = document.getElementsByClassName("close");
     }
 )
 
-const nextClick = nextBtn.addEventListener("click", () => {showSlide(slideIndex += 1)});
-const prevClick = prevBtn.addEventListener("click", () => {showSlide(slideIndex -= 1)});
+const nextClick = nextBtn.addEventListener("click", () => {
+    slideIndex += 1;
+    showSlide(slideIndex);
+});
+const prevClick = prevBtn.addEventListener("click", () => {
+    slideIndex -= 1;
+    showSlide(slideIndex);
+});
+
+
 
