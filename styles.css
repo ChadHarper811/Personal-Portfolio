@@ -157,6 +157,7 @@ P {
     display: block;
     width: auto;
     max-height: 90vh;
+    max-width: 100%;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -286,7 +287,7 @@ P {
     display: inline-block;
 }
 
-.info a:link, a:visited {
+a:link, a:visited {
     color: var(--light_gray);
     text-decoration: none;
 }
@@ -346,6 +347,60 @@ footer {
     .gallery-imgs {
         width: auto;
         max-height: 75vh;
+    }
+
+    .dots {
+        height: 10px;
+        width: 10px;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    #prev, #next {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .contactSection {
+        height: 50vh;
+        padding: 5vh 5vw 20vh 5vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        scroll-padding-top: 12vh;
+    }
+
+    #navbar li a {
+        padding: 10px 20px;
+    }
+
+    .welcomeSectionText {
+        padding-top: 22vh;
+    }
+
+    .aboutMeSection {
+        height: 80vh;
+        padding: 1vh 5vw 60vh 5vw;
+    }
+
+    #modalImg {
+        width: auto;
+        max-height: 85vh;
+    }
+
+    .gallery {
+        width: auto;
+        max-width: 90vw;
+    }
+
+    .gallery-imgs {
+        width: auto;
+        max-height: 75vh;
+        max-width: 100%;
     }
 
     .dots {
