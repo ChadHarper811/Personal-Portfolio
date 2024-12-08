@@ -53,8 +53,12 @@ li a:hover {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 65px;
     color: var(--orange);
+}
+
+.welcomeSectionText > h3, .aboutMeSection > h3 {
+    font-size: 25px;
 }
 
 P {
@@ -70,7 +74,7 @@ P {
 
 .welcomeSectionText {
     padding-top: 40vh;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 3px 3px 3px black;
 }
 
 .aboutMeSection {
