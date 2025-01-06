@@ -143,6 +143,17 @@ const data = [
         code: "https://github.com/ChadHarper811/cash_register"
     },
     {
+        id: 13,
+        href: "https://chadharper811.github.io/Pokemon_Search_App/",
+        thumbnail: "Pictures/Pokemon Search App/Pokemon Search App.png",
+        title: "Pokemon Search App",
+        languages: ["HTML: 30.0%", "CSS: 47.2%", "JavaScript: 22.8%"],
+        date: "1/6/2025",
+        purpose: "JSADS Cert.",
+        images: ["Pictures/Pokemon Search App/Pokemon Search App 1.png", "Pictures/Pokemon Search App/Pokemon Search App.png", "Pictures/Pokemon Search App/Pokemon Search App 2.png", "Pictures/Pokemon Search App/Pokemon Search App 3.png", "Pictures/Pokemon Search App/Pokemon Search App 4.png", "Pictures/Pokemon Search App/Pokemon Search App 5.png", "Pictures/Pokemon Search App/Pokemon Search App 6.png",],
+        code: "https://github.com/ChadHarper811/Pokemon_Search_App"
+    },
+    {
         id: "LaunchCodeCert",
         image: "Pictures/Certificates/LaunchCode Web Dev Cert.png"
     },
@@ -152,7 +163,7 @@ const data = [
     },
     {
         id: "freeCodeCampJSADSCert",
-        image: "Pictures/Certificates/freeCodeCamp Responsive Web Design Cert.png"
+        image: "Pictures/Certificates/freeCodeCamp Javascript algorithms and data structures.png"
     },
     {
         text: "Email",
