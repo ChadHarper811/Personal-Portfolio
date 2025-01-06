@@ -165,7 +165,7 @@ P {
     max-height: 90vh;
     max-width: 100%;
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.2s;
 }
 
 @keyframes zoom {
@@ -275,11 +275,11 @@ P {
 }
 
 .fade {
-    animation: fade 1.5s;
+    animation: fade 1s;
 }
 
 @keyframes fade {
-    from {opacity: .6;}
+    from {opacity: .8;}
     to {opacity: 1;}
 }
 
