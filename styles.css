@@ -322,6 +322,34 @@ footer {
     padding: 1vh 0 1vh 0;
 }
 
+/* testing new links */
+button {
+    position: relative;
+    height: 38px;
+    padding: 4px 15px 4px 48px;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+#email-link {
+    background: linear-gradient(to left, #0a66c2ec 50%, #0a66c2 50%);
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+#email-link:hover {
+    background-position: left;
+    transition: all 1s ease;
+}
+
+
+
+
 @media only screen and (max-width: 800px) and (orientation: landscape) {
     html {
         scroll-padding-top: 13vh;
