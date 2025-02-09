@@ -297,6 +297,7 @@ P {
     margin: 1vh;
     display: inline-block;
     text-transform: capitalize;
+    padding: 0vh 1vh;
 }
 
 a:link, a:visited {
@@ -309,15 +310,20 @@ a:link, a:visited {
 }
 
 #email {
-    color: black !important;
-    background-color: var(--email);
+    color: black;
+    background: linear-gradient(to left, var(--email) 50%, var(--email-icon) 50%);
+    background-size: 200% 100%;
+    background-position: 65% 0%;
 }
 
 #email-icon {
-    height: 3.5vh;
-    background-color: var(--email-icon);
+    padding-right: 1.5vh;
 }
 
+#email:hover {
+    background-position: left;
+    transition: all 1s ease;
+}
 
 .contactSection {
     min-height: 63vh;
