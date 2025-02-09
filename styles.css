@@ -5,6 +5,10 @@
     --orange: #c96700;
     --white: #f0f0f0;
     --off_white: #d6d6d6;
+    --email: #e5e5e5;
+    --email-icon:#9b9b9b;
+    --phone: #0a0a0a;
+    --linkedin: #0a66c2;
 }
 
 html {
@@ -283,31 +287,37 @@ P {
     to {opacity: 1;}
 }
 
-.info > a > .hover {
-    color: var(--blue);
-}
 
 .info {
+    position: relative;
+    height: 3.5vh;
+    text-align: center;
+    align-items: center;
     font-size: 25px;
-    margin: 5px 7px 10px 7px;
+    margin: 1vh;
     display: inline-block;
+    text-transform: capitalize;
 }
 
 a:link, a:visited {
-    color: var(--light_gray);
+    color: var(--white);
     text-decoration: none;
 }
 
-.info a:hover {
-    color: var(--orange);
-    text-shadow: 3px 3px 2px black;
-    transition: 0.5s ease-out;
+#email> a:link, #email > a:visited {
+    color: black;
 }
 
-.info:hover > a > .hover {
-    color: var(--orange);
-    transition: 0.5s ease-out;
+#email {
+    color: black !important;
+    background-color: var(--email);
 }
+
+#email-icon {
+    height: 3.5vh;
+    background-color: var(--email-icon);
+}
+
 
 .contactSection {
     min-height: 63vh;
@@ -323,15 +333,13 @@ footer {
 }
 
 /* testing new links */
-button {
+.contact-link {
     position: relative;
     height: 38px;
-    padding: 4px 15px 4px 48px;
     display: inline-block;
     color: #fff;
     border: none;
     border-radius: 3px;
-    font-family: 'Helvetica', Arial, sans-serif;
     cursor: pointer;
     transition: all 0.25s ease-in-out;
 }

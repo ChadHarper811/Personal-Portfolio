@@ -166,27 +166,27 @@ const data = [
         image: "Pictures/Certificates/freeCodeCamp Javascript algorithms and data structures.png"
     },
     {
-        text: "Email",
-        icon: "fa-solid fa-envelope",
+        text: "email",
+        icon: "fa-regular fa-envelope",
         link: "mailto: chadharper811@gmail.com",
     },
     {
-        text: "Phone",
+        text: "phone",
         icon: "fa-solid fa-mobile-screen",
         link: "tel:913-961-8439",
     },
     {
-        text: "LinkedIn",
+        text: "linkedIn",
         icon: "fa-brands fa-linkedin",
         link: "https://www.linkedin.com/in/chadharper811/",
     },
     {
-        text: "GitHub",
+        text: "gitHub",
         icon: "fa-brands fa-square-github",
         link: "https://github.com/ChadHarper811",
     },
     {
-        text: "Resume site",
+        text: "resumeSite",
         icon: "fa-solid fa-file",
         link: "https://chadharper811.github.io/Updated-Resume/",
     },
@@ -335,8 +335,10 @@ const calcBtnsPositions = () => {
 data.filter(el => el.icon).forEach(
     ({icon, link, text}) => {
         contactLinks.innerHTML += `
-        <div class="info"> 
-            <a href="${link}" class="contact-details"> <span class="hover">&lt;</span><i class="${icon}"></i>${text}<span class="hover">&#47;&gt;</span> </a>
+        <div id="${text}" class="info">
+            <a href="${link}" class="contact-details">
+                 <i id="${text}-icon" class="${icon}"></i>${text}
+            </a>
         </div>
         `
     }
