@@ -5,10 +5,16 @@
     --orange: #c96700;
     --white: #f0f0f0;
     --off_white: #d6d6d6;
-    --email: #e5e5e5;
+    --email: #d1d1d1;
     --email-icon:#9b9b9b;
-    --phone: #0a0a0a;
-    --linkedin: #0a66c2;
+    --phone: #222222;
+    --phone-icon: #0a0a0a;
+    --linkedIn: #0a66c2;
+    --linkedIn-icon: #0a4785;
+    --github: #696969;
+    --github-icon: #3a3e43;
+    --resume: #c96700;
+    --resume-icon: #864500;
 }
 
 html {
@@ -290,7 +296,7 @@ P {
 
 .contacts {
     position: relative;
-    height: 3.5vh;
+    height: 3.6vh;
     text-align: center;
     align-items: center;
     font-size: 25px;
@@ -298,11 +304,21 @@ P {
     display: inline-block;
     text-transform: capitalize;
     padding: 0vh 1vh;
+    border-radius: .2vh;
 }
 
 a:link, a:visited {
     color: var(--white);
     text-decoration: none;
+}
+
+#email-icon, #phone-icon, #linkedIn-icon, #gitHub-icon, #resumeSite-icon {
+    padding-right: 1.5vh;
+}
+
+#email-link:hover, #phone-link:hover, #linkedIn-link:hover, #gitHub-link:hover, #resumeSite-link:hover {
+    background-position: left;
+    transition: all 1s ease;
 }
 
 #email-link > a:link, #email-link > a:visited {
@@ -316,13 +332,18 @@ a:link, a:visited {
     background-position: 65% 0%;
 }
 
-#email-icon {
-    padding-right: 1.5vh;
+#phone-link {
+    padding: .2vh 1vh;
+    background: linear-gradient(to left, var(--phone) 50%, var(--phone-icon) 50%);
+    background-size: 200% 100%;
+    background-position: 70% 0%;
 }
 
-#email-link:hover {
-    background-position: left;
-    transition: all 1s ease;
+#linkedIn-link {
+    padding: .2vh 1vh;
+    background: linear-gradient(to left, var(--linkedIn) 50%, var(--linkedIn-icon) 50%);
+    background-size: 200% 100%;
+    background-position: 74% 0%;
 }
 
 .contactSection {
