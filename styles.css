@@ -7,8 +7,8 @@
     --off_white: #d6d6d6;
     --email: #d1d1d1;
     --email-icon:#9b9b9b;
-    --phone: #222222;
-    --phone-icon: #0a0a0a;
+    --phone: #1a1a1a;
+    --phone-icon: #000000;
     --linkedIn: #0a66c2;
     --linkedIn-icon: #0a4785;
     --github: #696969;
@@ -333,17 +333,31 @@ a:link, a:visited {
 }
 
 #phone-link {
-    padding: .2vh 1vh;
+    padding: .1vh 1vh;
     background: linear-gradient(to left, var(--phone) 50%, var(--phone-icon) 50%);
     background-size: 200% 100%;
     background-position: 70% 0%;
 }
 
 #linkedIn-link {
-    padding: .2vh 1vh;
+    padding: .1vh 1vh;
     background: linear-gradient(to left, var(--linkedIn) 50%, var(--linkedIn-icon) 50%);
     background-size: 200% 100%;
     background-position: 74% 0%;
+}
+
+#gitHub-link {
+    padding: .1vh 1vh;
+    background: linear-gradient(to left, var(--github) 50%, var(--github-icon) 50%);
+    background-size: 200% 100%;
+    background-position: 70% 0%;
+}
+
+#resumeSite-link {
+    padding: .1vh 1vh;
+    background: linear-gradient(to left, var(--resume) 50%, var(--resume-icon) 50%);
+    background-size: 200% 100%;
+    background-position: 80% 0%;
 }
 
 .contactSection {
