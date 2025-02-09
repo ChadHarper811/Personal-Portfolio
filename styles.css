@@ -288,7 +288,7 @@ P {
 }
 
 
-.info {
+.contacts {
     position: relative;
     height: 3.5vh;
     text-align: center;
@@ -305,11 +305,11 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-#email> a:link, #email > a:visited {
+#email-link > a:link, #email-link > a:visited {
     color: black;
 }
 
-#email {
+#email-link {
     color: black;
     background: linear-gradient(to left, var(--email) 50%, var(--email-icon) 50%);
     background-size: 200% 100%;
@@ -320,7 +320,7 @@ a:link, a:visited {
     padding-right: 1.5vh;
 }
 
-#email:hover {
+#email-link:hover {
     background-position: left;
     transition: all 1s ease;
 }
@@ -337,32 +337,6 @@ footer {
     background-color: var(--gray);
     padding: 1vh 0 1vh 0;
 }
-
-/* testing new links */
-.contact-link {
-    position: relative;
-    height: 38px;
-    display: inline-block;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-}
-
-#email-link {
-    background: linear-gradient(to left, #0a66c2ec 50%, #0a66c2 50%);
-    background-size: 200% 100%;
-    background-position: right;
-}
-
-#email-link:hover {
-    background-position: left;
-    transition: all 1s ease;
-}
-
-
-
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
     html {

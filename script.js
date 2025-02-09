@@ -335,7 +335,7 @@ const calcBtnsPositions = () => {
 data.filter(el => el.icon).forEach(
     ({icon, link, text}) => {
         contactLinks.innerHTML += `
-        <div id="${text}" class="info">
+        <div id="${text}-link" class="contacts">
             <a href="${link}" class="contact-details">
                  <i id="${text}-icon" class="${icon}"></i>${text}
             </a>
