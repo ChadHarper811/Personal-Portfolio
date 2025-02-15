@@ -155,7 +155,7 @@ P {
 }
 
 
-#modal-container {
+#modal-container, #gallery-container {
     display: none;
     position: fixed;
     z-index: 1;
@@ -168,7 +168,7 @@ P {
     background-color: rgba(0,0,0,0.8);
 }
 
-#modal {
+#modal, #gallery {
     max-width: fit-content;
     margin: auto;
     left: 5px;
@@ -191,56 +191,35 @@ P {
     to {transform: scale(1)}
 }
 
-.close {
+.closeBtn {
+    position: absolute;
+    right: 10px;
+    top: -40px;
     color: var(--resume);
     font-size: 40px;
     font-weight: bold;
     transition: 0.4s;
 }
 
-.close:hover, .close:focus {
+.closeBtn:hover, .closeBtn:focus {
     color: var(--resume-icon);
     cursor: pointer;
 }
-
-#modalBtn {
-    position: absolute;
-    right: 10px;
-    top: -40px;
-}
-
-
-#gallery-container {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 3vh;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-color: rgba(0,0,0,0.8);
-}
-
-.galleryBtn {
-    float: right;
-    padding: -10px 0;
-    margin: -10px 0;
-}
-
 #dots {
-    display: inline-flex;
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    right: 5px;
 }
 
 .dots {
+    display: inline-block;
     cursor: pointer;
     height: 10px;
     width: 10px;
     margin: 0 2px;
     background-color: var(--light_gray);
     border-radius: 50%;
-    display: inline-block;
     transition: background-color 0.6s ease;
 }
 
@@ -249,10 +228,9 @@ P {
 }
 
 .slideNum {
-    display: inline-flex;
     color: var(--orange);
     position: absolute;
-    margin-top: -20px;
+    margin-top: -25px;
 }
 
 .gallery {

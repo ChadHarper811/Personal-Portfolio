@@ -199,7 +199,6 @@ const freeCodeCampRWDCert = document.getElementById("freeCodeCampRWDCert");
 const freeCodeCampJSADSCert = document.getElementById("freeCodeCampJSADSCert");
 const projectsSection = document.getElementById("projectsSection");
 const modal = document.getElementById("modal-container");
-const closeBtn = document.getElementById("close");
 const modalImg = document.getElementById("modalImg");
 const galleryContainer = document.getElementById("gallery-container")
 const galleryImgs = document.getElementById("gallery-imgs");
@@ -346,7 +345,7 @@ data.filter(el => el.icon).forEach(
 
 const resize = window.addEventListener("resize", calcBtnsPositions)
 
-const closeBtns = document.getElementsByClassName("close");
+const closeBtns = document.getElementsByClassName("closeBtn");
 
 [...closeBtns].forEach(
     (btn) => {
