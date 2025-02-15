@@ -155,7 +155,7 @@ P {
 }
 
 
-#modal {
+#modal-container {
     display: none;
     position: fixed;
     z-index: 1;
@@ -168,6 +168,14 @@ P {
     background-color: rgba(0,0,0,0.8);
 }
 
+#modal {
+    max-width: fit-content;
+    margin: auto;
+    left: 5px;
+    right: 5px;
+    position: absolute;
+}
+
 #modalImg {
     margin: auto;
     display: block;
@@ -175,7 +183,7 @@ P {
     max-height: 90vh;
     max-width: 100%;
     animation-name: zoom;
-    animation-duration: 0.2s;
+    animation-duration: 0.3s;
 }
 
 @keyframes zoom {
@@ -184,21 +192,21 @@ P {
 }
 
 .close {
-    color: var(--light_gray);
+    color: var(--resume);
     font-size: 40px;
     font-weight: bold;
     transition: 0.4s;
 }
 
 .close:hover, .close:focus {
-    color: var(--orange);
+    color: var(--resume-icon);
     cursor: pointer;
 }
 
-.modalBtn {
+#modalBtn {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    right: 10px;
+    top: -40px;
 }
 
 
