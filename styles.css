@@ -6,16 +6,16 @@
     --orange: #c96700;
     --white: #f0f0f0;
     --off_white: #d6d6d6;
-    --email: #d1d1d1;
-    --email-icon:#9b9b9b;
-    --phone: #1a1a1a;
-    --phone-icon: #000000;
-    --linkedIn: #0a66c2;
-    --linkedIn-icon: #0a4785;
-    --github: #696969;
-    --github-icon: #3a3e43;
-    --resume: #c96700;
-    --resume-icon: #864500;
+    --email-icon: #d1d1d1;
+    --email:#9b9b9b;
+    --phone-icon: #272727;
+    --phone: #000000;
+    --linkedIn-icon: #0a66c2;
+    --linkedIn: #0a4785;
+    --github-icon: #696969;
+    --github: #3a3e43;
+    --resume-icon: #c96700;
+    --resume: #864500;
 }
 
 html {
@@ -294,11 +294,11 @@ P {
 
 .contacts {
     position: relative;
-    height: 3.6vh;
+    height: 30px;
     text-align: center;
     align-items: center;
     font-size: 25px;
-    margin: 1vh;
+    margin: 2vh;
     display: inline-block;
     text-transform: capitalize;
     padding: 0vh 1vh;
@@ -331,31 +331,27 @@ a:link, a:visited {
 }
 
 #phone-link {
-    padding: .1vh 1vh;
     background: linear-gradient(to left, var(--phone) 50%, var(--phone-icon) 50%);
     background-size: 200% 100%;
-    background-position: 70% 0%;
+    background-position: 72% 0%;
 }
 
 #linkedIn-link {
-    padding: .1vh 1vh;
     background: linear-gradient(to left, var(--linkedIn) 50%, var(--linkedIn-icon) 50%);
     background-size: 200% 100%;
-    background-position: 74% 0%;
+    background-position: 76% 0%;
 }
 
 #gitHub-link {
-    padding: .1vh 1vh;
     background: linear-gradient(to left, var(--github) 50%, var(--github-icon) 50%);
     background-size: 200% 100%;
-    background-position: 70% 0%;
+    background-position: 72% 0%;
 }
 
 #resumeSite-link {
-    padding: .1vh 1vh;
     background: linear-gradient(to left, var(--resume) 50%, var(--resume-icon) 50%);
     background-size: 200% 100%;
-    background-position: 80% 0%;
+    background-position: 82% 0%;
 }
 
 .contactSection {
@@ -371,9 +367,9 @@ footer {
     padding: 1vh 0 1vh 0;
 }
 
-@media only screen and (max-width: 800px) and (orientation: landscape) {
+@media only screen and (max-width: 800px) {
     html {
-        scroll-padding-top: 13vh;
+        scroll-padding-top: 7.5vh;
     }
 
     #navbar li a {
@@ -410,31 +406,8 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-    html {
-        scroll-padding-top: 6vh;
-    }
 
-    #navbar li a {
-        padding: 12px 12px;
-    }
-
-    .welcomeSectionText {
-        padding-top: 22vh;
-    }
-
-    #prev, #next {
-        padding: 12px;
-        font-size: 16px;
-    }
 }
 
 @media only screen and (max-width: 390px) {
-    html {
-        scroll-padding-top: 5vh;
-    }
-
-    #navbar li a {
-        font-size: 20px;
-        padding: 14px 14px;
-    }
 }
