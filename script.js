@@ -253,7 +253,7 @@ const showSlide = (n) => {
                 showSlide(slideIndex)
             });
         });
-}
+};
 
 const galleryDisplay = (projectID) => {
     document.body.classList.add("stop-scrolling");
@@ -294,7 +294,7 @@ const allProjectDivLanguages = document.getElementsByClassName("divLang");
             galleryDisplay(projectID);
         })
     }
-)
+);
 
 const allProjectDivElements = document.getElementsByClassName("divEl");
 
@@ -306,7 +306,7 @@ const allProjectDivElements = document.getElementsByClassName("divEl");
             galleryDisplay(projectID);
         })
     }
-)
+);
 
 const allProjectDivs = document.getElementsByClassName("project-tile");
 
@@ -317,18 +317,7 @@ const allProjectDivs = document.getElementsByClassName("project-tile");
             galleryDisplay(projectID);
         })
     }
-)
-
-const calcBtnsPositions = () => {
-    const galleryWidth = galleryImgs.offsetWidth;
-    const gallerHeight = galleryImgs.offsetHeight;
-    const windowWidth = window.innerWidth;
-
-    nextBtn.style.right = Number((windowWidth - galleryWidth) / 2) + "px";
-    nextBtn.style.top = Number(gallerHeight / 2) + "px";
-    prevBtn.style.left = Number((windowWidth - galleryWidth) / 2) + "px";
-    prevBtn.style.top = Number(gallerHeight / 2) + "px";
-}
+);
 
 
 data.filter(el => el.icon).forEach(
@@ -342,8 +331,6 @@ data.filter(el => el.icon).forEach(
         `
     }
 );
-
-const resize = window.addEventListener("resize", calcBtnsPositions)
 
 const closeBtns = document.getElementsByClassName("closeBtn");
 
