@@ -312,6 +312,7 @@ P {
     display: inline-block;
     text-transform: capitalize;
     padding: 0 6px;
+    padding-top: 2px;
     border-radius: 3px;
 }
 

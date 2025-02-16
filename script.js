@@ -190,8 +190,6 @@ const data = [
         icon: "fa-solid fa-file",
         link: "https://chadharper811.github.io/Updated-Resume/",
     },
-    
-    
 ]
 
 const launchCodeCert = document.getElementById("LaunchCodeCert");
