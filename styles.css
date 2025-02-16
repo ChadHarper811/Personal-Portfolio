@@ -563,20 +563,42 @@ footer {
         font-size: 12px;
     }
 }
-/* Max Height Media Queries */
 
-@media only screen and (max-height: 600px) {
-    #site-link {
-        left: 9vw;
+/* Max Height & landscape Media Queries */
+@media only screen and (max-height: 540px) and (orientation: landscape) {
+    .slideNum {
+        top: 1px;
+        font-size: 15px;
+    }
+
+    .link {
+        top: -24px;
+        font-size: 15px;
     }
 
     #coding-link {
         right: 8vw;
     }
+
+    .dots {
+        margin: 0 1.5px;
+        height: 9px;
+        width: 9px;
+    }
+
+    .closeBtn {
+        font-size: 38px;
+        top: -38px;
+    }
+
+    #prev, #next {
+        padding: 15px;
+        font-size: 19px;
+    }
 }
 
 
-@media only screen and (max-height: 480px) {
+@media only screen and (max-height: 480px) and (orientation: landscape) {
     .slideNum {
         top: 2px;
         font-size: 14px;
@@ -588,11 +610,11 @@ footer {
     }
 
     #site-link {
-        left: 7vw;
+        left: 9vw;
     }
 
     #coding-link {
-        right: 6vw;
+        right: 7vw;
     }
 
     .dots {
@@ -612,7 +634,7 @@ footer {
     }
 }
 
-@media only screen and (max-height: 380px) {
+@media only screen and (max-height: 380px) and (orientation: landscape) {
     .slideNum {
         top: 3px;
         font-size: 13px;
@@ -624,11 +646,11 @@ footer {
     }
 
     #site-link {
-        left: 5vw;
+        left: 10vw;
     }
 
     #coding-link {
-        right: 4vw;
+        right: 8vw;
     }
 
     .dots {
@@ -648,7 +670,7 @@ footer {
     }
 }
 
-@media only screen and (max-height: 295px) {
+@media only screen and (max-height: 300px) and (orientation: landscape) {
     .slideNum {
         top: 4px;
         font-size: 12px;
@@ -660,11 +682,11 @@ footer {
     }
 
     #site-link {
-        left: 4vw;
+        left: 9vw;
     }
 
     #coding-link {
-        right: 3vw;
+        right: 6vw;
     }
 
     .dots {
