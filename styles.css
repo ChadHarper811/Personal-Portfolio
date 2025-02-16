@@ -396,11 +396,34 @@ footer {
         padding-top: 22vh;
     }
 
-    .gallery {
-        width: auto;
-        max-width: 45vw;
+    .slideNum {
+        top: 5px;
+        font-size: 14px;
     }
 
+    .link {
+        top: -22px;
+        font-size: 14px;
+    }
+
+    #site-link {
+        left: 9vw;
+    }
+
+    #coding-link {
+        right: 7vw;
+    }
+
+    .dots {
+        margin: 0 1px;
+        height: 8px;
+        width: 8px;
+    }
+
+    .closeBtn {
+        font-size: 35px;
+        top: -35px;
+    }
 
     #prev, #next {
         padding: 12px;
@@ -410,15 +433,104 @@ footer {
     .contactSection {
         padding: 1vh 5vw 5vh 5vw;
     }
+};
 
-    .info {
-        font-size: 20px;
+@media only screen and (max-width: 640px) {
+    .slideNum {
+        top: 5px;
+        font-size: 12px;
     }
-}
 
-@media only screen and (max-height: 480px) {
+    .link {
+        top: -20px;
+        font-size: 12px;
+    }
 
-}
+    .dots {
+        margin: 0 .5px;
+        height: 7px;
+        width: 7px;
+    }
 
-@media only screen and (max-width: 390px) {
-}
+    .closeBtn {
+        font-size: 30px;
+        top: -32px;
+    }
+
+    #prev, #next {
+        padding: 10px;
+        font-size: 14px;
+    }
+};
+
+@media only screen and (max-width: 480px) {
+    .slideNum {
+        top: 5px;
+        font-size: 11px;
+    }
+
+    .link {
+        top: -20px;
+        font-size: 11px;
+    }
+
+    #site-link {
+        left: 8.2vw;
+    }
+
+    #coding-link {
+        right: 5vw;
+    }
+
+    .dots {
+        margin: 0 .2px;
+        height: 6px;
+        width: 6px;
+    }
+
+    .closeBtn {
+        font-size: 28px;
+        top: -30px;
+    }
+
+    #prev, #next {
+        padding: 8px;
+        font-size: 12px;
+    }
+};
+
+@media only screen and (max-width: 425px) {
+    .slideNum {
+        top: 5px;
+        font-size: 10px;
+    }
+
+    .link {
+        top: -20px;
+        font-size: 10px;
+    }
+
+    #site-link {
+        left: 9vw;
+    }
+
+    #coding-link {
+        right: 6vw;
+    }
+
+    .dots {
+        margin: 0 -1px;
+        height: 6px;
+        width: 6px;
+    }
+
+    .closeBtn {
+        font-size: 26px;
+        top: -30px;
+    }
+
+    #prev, #next {
+        padding: 7px;
+        font-size: 11px;
+    }
+};
