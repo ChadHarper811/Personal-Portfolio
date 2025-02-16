@@ -201,10 +201,13 @@ const projectsSection = document.getElementById("projectsSection");
 const modal = document.getElementById("modal-container");
 const modalImg = document.getElementById("modalImg");
 const galleryContainer = document.getElementById("gallery-container")
-const galleryImgs = document.getElementById("gallery-imgs");
+const slideNum = document.getElementById("slide-number");
 const dotsDiv = document.getElementById("dots");
+const galleryImgs = document.getElementById("gallery-imgs");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next")
+const siteLink = document.getElementById("site-link");
+const codingLink = document.getElementById("coding-link");
 const contactLinks = document.getElementById("contactLinks");
 let slideIndex = 1;
 
@@ -238,13 +241,14 @@ data.filter(el => el.href).forEach(
 )
 
 const showSlide = (n) => {
-    const slides = document.getElementsByClassName("gallerySlide");
+    const gallery = document.getElementsByClassName("gallery-imgs");
     const dots = document.getElementsByClassName("dots");
-    if (n > slides.length) {slideIndex = 1};
-    if (n < 1) {slideIndex = slides.length};
-    [...slides].forEach((slide) => {slide.style.display = "none"});
+    if (n > gallery.length) {slideIndex = 1};
+    if (n < 1) {slideIndex = gallery.length};
+    [...gallery].forEach((slide) => {slide.style.display = "none"});
     [...dots].forEach((dot) => {dot.classList.remove("active")});
-    slides[slideIndex - 1].style.display = "block";
+    gallery[slideIndex - 1].style.display = "block";
+    slideNum.innerText = `${slideIndex} / ${gallery.length}`;
     dots[slideIndex - 1].classList.add("active");
     [...dots].forEach(
         (dot) => {
@@ -260,28 +264,28 @@ const galleryDisplay = (projectID) => {
     galleryContainer.style.display = "block";
 
     data.filter(el => el.id === Number(projectID))[0].images.forEach((image, index, fullArray) => {
-        galleryImgs.innerHTML += 
-        `
-        <div class="gallerySlide fade">
-            <div class="slideNum">${index + 1} / ${fullArray.length}</div>
-            <img class="gallery-imgs" src="${image}" />
-
-            <div class="info"> 
-                <a href="${data.filter(el => el.id === Number(projectID))[0].href}" class="contact-details"> <span class="hover">&lt;</span>Site Link<span class="hover">&#47;&gt;</span> </a>
-            </div>
-            <div class="info"> 
-                <a href="${data.filter(el => el.id === Number(projectID))[0].code}" class="contact-details"> <span class="hover">&lt;</span>Code Link<span class="hover">&#47;&gt;</span> </a>
-            </div>
-        </div>
-        `
         dotsDiv.innerHTML += 
         `
         <span class="dots" id="${index + 1}" ></span>
         `
+
+        galleryImgs.innerHTML += 
+        `
+        <img class="gallery-imgs" src="${image}" />
+        `
+
+        siteLink.innerHTML = 
+        `
+        <a href="${data.filter(el => el.id === Number(projectID))[0].href}" > <span class="hover">&lt;</span>Site Link<span class="hover">&#47;&gt;</span> </a>
+        `
+
+        codingLink.innerHTML = 
+        `
+        <a href="${data.filter(el => el.id === Number(projectID))[0].code}" > <span class="hover">&lt;</span>Code Link<span class="hover">&#47;&gt;</span> </a>
+        `
         
     })
     showSlide(slideIndex);
-    calcBtnsPositions();
 };
 
 const allProjectDivLanguages = document.getElementsByClassName("divLang");
@@ -338,8 +342,11 @@ const closeBtns = document.getElementsByClassName("closeBtn");
     (btn) => {
         btn.addEventListener("click", () => {
             galleryContainer.style.display = "none";
-            galleryImgs.innerHTML = "";
+            slideNum.innerHTML = "";
             dotsDiv.innerHTML = "";
+            galleryImgs.innerHTML = "";
+            siteLink.innerHTML = "";
+            codingLink.innerHTML = "";
             modal.style.display = "none";
             modalImg.src = "";
             document.body.classList.remove("stop-scrolling");

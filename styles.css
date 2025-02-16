@@ -8,8 +8,8 @@
     --off_white: #d6d6d6;
     --email-icon: #d1d1d1;
     --email:#9b9b9b;
-    --phone-icon: #272727;
-    --phone: #000000;
+    --phone-icon: #006680;
+    --phone: #00485a;
     --linkedIn-icon: #0a66c2;
     --linkedIn: #0a4785;
     --github-icon: #696969;
@@ -235,12 +235,26 @@ P {
 }
 
 #gallery {
-    border: 2px solid white;
     margin: auto;
     width: 75vw;
     height: auto;
     animation-name: zoom;
     animation-duration: 0.6s;
+}
+
+.gallery-imgs {
+    object-fit: contain;
+    width: 100%;
+    max-height: 90vh;
+}
+
+.fade {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {opacity: .8;}
+    to {opacity: 1;}
 }
 
 #prev, #next {
@@ -272,32 +286,26 @@ P {
     background-color: var(--orange);
 }
 
-.gallerySlide {
-
+.link {
+    position: absolute;
+    top: -25px;
 }
 
-.gallery-imgs {
-    object-fit: contain;
-    width: 100%;
-    aspect-ratio: 4/3;
-    max-height: 90vh;
-}
-
-.fade {
-    animation: fade 1s;
-}
-
-@keyframes fade {
-    from {opacity: .8;}
-    to {opacity: 1;}
-}
-
-.info {
-    display: inline-block;
-}
-
-.info > a:hover {
+.link > a:hover, .link > a:hover .hover {
+    transition: .7s;
     color: var(--orange);
+}
+
+#site-link {
+    left: 10vw;
+}
+
+#coding-link {
+    right: 10vw;
+}
+
+.hover {
+    color: var(--modal);
 }
 
 .contacts {
@@ -306,11 +314,11 @@ P {
     text-align: center;
     align-items: center;
     font-size: 25px;
-    margin: 2vh;
+    margin: 20px;
     display: inline-block;
     text-transform: capitalize;
-    padding: 0vh 1vh;
-    border-radius: .2vh;
+    padding: 0 6px;
+    border-radius: 3px;
 }
 
 a:link, a:visited {
@@ -319,7 +327,7 @@ a:link, a:visited {
 }
 
 #email-icon, #phone-icon, #linkedIn-icon, #gitHub-icon, #resumeSite-icon {
-    padding-right: 1.5vh;
+    padding-right: 10px;
 }
 
 #email-link:hover, #phone-link:hover, #linkedIn-link:hover, #gitHub-link:hover, #resumeSite-link:hover {
@@ -335,7 +343,7 @@ a:link, a:visited {
     color: black;
     background: linear-gradient(to left, var(--email) 50%, var(--email-icon) 50%);
     background-size: 200% 100%;
-    background-position: 65% 0%;
+    background-position: 66% 0%;
 }
 
 #phone-link {
@@ -359,7 +367,7 @@ a:link, a:visited {
 #resumeSite-link {
     background: linear-gradient(to left, var(--resume) 50%, var(--resume-icon) 50%);
     background-size: 200% 100%;
-    background-position: 82% 0%;
+    background-position: 83% 0%;
 }
 
 .contactSection {
