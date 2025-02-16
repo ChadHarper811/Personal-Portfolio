@@ -174,6 +174,8 @@ P {
     left: 5px;
     right: 5px;
     position: absolute;
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 #modalImg {
@@ -232,14 +234,6 @@ P {
 
 .active, .dots:hover {
     background-color: var(--orange);
-}
-
-#gallery {
-    margin: auto;
-    width: 75vw;
-    height: auto;
-    animation-name: zoom;
-    animation-duration: 0.6s;
 }
 
 .gallery-imgs {
@@ -383,6 +377,8 @@ footer {
     padding: 1vh 0 1vh 0;
 }
 
+/* Max Width Media Queries */
+
 @media only screen and (max-width: 800px) {
     html {
         scroll-padding-top: 7.5vh;
@@ -396,22 +392,40 @@ footer {
         padding-top: 22vh;
     }
 
-    .slideNum {
-        top: 5px;
-        font-size: 14px;
-    }
-
-    .link {
-        top: -22px;
-        font-size: 14px;
-    }
-
     #site-link {
-        left: 9vw;
+        left: 12vw;
     }
 
     #coding-link {
-        right: 7vw;
+        right: 12vw;
+    }
+    
+    .contactSection {
+        padding: 1vh 5vw 5vh 5vw;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .slideNum {
+        top: 1px;
+        font-size: 15px;
+    }
+
+    .link {
+        top: -24px;
+        font-size: 15px;
+    }
+
+    #site-link {
+        left: 15vw;
+    }
+
+    #coding-link {
+        right: 11vw;
+    }
+
+    #dots {
+        top: -26px;
     }
 
     .dots {
@@ -421,101 +435,76 @@ footer {
     }
 
     .closeBtn {
-        font-size: 35px;
-        top: -35px;
+        font-size: 38px;
+        top: -38px;
+    }
+
+    #prev, #next {
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .slideNum {
+        top: 2px;
+        font-size: 13px;
+    }
+
+    .link {
+        top: -23px;
+        font-size: 13px;
+    }
+
+    #site-link {
+        left: 14vw;
+    }
+
+    #coding-link {
+        right: 11vw;
+    }
+
+    #dots {
+        top: -27px;
+    }
+
+    .dots {
+        margin: 0;
+        height: 7px;
+        width: 7px;
+    }
+
+    .closeBtn {
+        font-size: 36px;
+        top: -36px;
     }
 
     #prev, #next {
         padding: 12px;
         font-size: 16px;
     }
+}
 
-    .contactSection {
-        padding: 1vh 5vw 5vh 5vw;
-    }
-};
-
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 400px) {
     .slideNum {
-        top: 5px;
+        top: 3px;
         font-size: 12px;
     }
 
     .link {
-        top: -20px;
+        top: -22px;
         font-size: 12px;
-    }
-
-    .dots {
-        margin: 0 .5px;
-        height: 7px;
-        width: 7px;
-    }
-
-    .closeBtn {
-        font-size: 30px;
-        top: -32px;
-    }
-
-    #prev, #next {
-        padding: 10px;
-        font-size: 14px;
-    }
-};
-
-@media only screen and (max-width: 480px) {
-    .slideNum {
-        top: 5px;
-        font-size: 11px;
-    }
-
-    .link {
-        top: -20px;
-        font-size: 11px;
     }
 
     #site-link {
-        left: 8.2vw;
+        left: 13vw;
     }
 
     #coding-link {
-        right: 5vw;
+        right: 9vw;
     }
-
-    .dots {
-        margin: 0 .2px;
-        height: 6px;
-        width: 6px;
-    }
-
-    .closeBtn {
-        font-size: 28px;
-        top: -30px;
-    }
-
-    #prev, #next {
-        padding: 8px;
-        font-size: 12px;
-    }
-};
-
-@media only screen and (max-width: 425px) {
-    .slideNum {
-        top: 5px;
-        font-size: 10px;
-    }
-
-    .link {
-        top: -20px;
-        font-size: 10px;
-    }
-
-    #site-link {
-        left: 9vw;
-    }
-
-    #coding-link {
-        right: 6vw;
+    #dots {
+        top: -28px;
     }
 
     .dots {
@@ -525,12 +514,172 @@ footer {
     }
 
     .closeBtn {
-        font-size: 26px;
-        top: -30px;
+        font-size: 34px;
+        top: -35px;
     }
 
     #prev, #next {
-        padding: 7px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .slideNum {
+        top: 3px;
         font-size: 11px;
     }
-};
+
+    .link {
+        top: -22px;
+        font-size: 11px;
+    }
+
+    #site-link {
+        left: 13vw;
+    }
+
+    #coding-link {
+        right: 9vw;
+    }
+
+    #dots {
+        top: -27px;
+    }
+
+    .dots {
+        margin: 0 -1.5px;
+        height: 6px;
+        width: 6px;
+    }
+
+    .closeBtn {
+        font-size: 32px;
+        top: -35px;
+    }
+
+    #prev, #next {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+/* Max Height Media Queries */
+
+@media only screen and (max-height: 600px) {
+    #site-link {
+        left: 9vw;
+    }
+
+    #coding-link {
+        right: 8vw;
+    }
+}
+
+
+@media only screen and (max-height: 480px) {
+    .slideNum {
+        top: 2px;
+        font-size: 14px;
+    }
+
+    .link {
+        top: -22px;
+        font-size: 14px;
+    }
+
+    #site-link {
+        left: 7vw;
+    }
+
+    #coding-link {
+        right: 6vw;
+    }
+
+    .dots {
+        margin: 0 1px;
+        height: 8px;
+        width: 8px;
+    }
+
+    .closeBtn {
+        font-size: 36px;
+        top: -35px;
+    }
+
+    #prev, #next {
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-height: 380px) {
+    .slideNum {
+        top: 3px;
+        font-size: 13px;
+    }
+
+    .link {
+        top: -22px;
+        font-size: 13px;
+    }
+
+    #site-link {
+        left: 5vw;
+    }
+
+    #coding-link {
+        right: 4vw;
+    }
+
+    .dots {
+        margin: 0;
+        height: 7px;
+        width: 7px;
+    }
+
+    .closeBtn {
+        font-size: 34px;
+        top: -35px;
+    }
+
+    #prev, #next {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-height: 295px) {
+    .slideNum {
+        top: 4px;
+        font-size: 12px;
+    }
+
+    .link {
+        top: -21px;
+        font-size: 12px;
+    }
+
+    #site-link {
+        left: 4vw;
+    }
+
+    #coding-link {
+        right: 3vw;
+    }
+
+    .dots {
+        margin: 0 -1px;
+        height: 7px;
+        width: 7px;
+    }
+
+    .closeBtn {
+        font-size: 32px;
+        top: -32px;
+    }
+
+    #prev, #next {
+        padding: 11px;
+        font-size: 14px;
+    }
+}
