@@ -128,7 +128,7 @@ const data = [
         languages: ["HTML: 54%", "CSS: 15.7%", "JavaScript: 30.3%"],
         date: "8/20/24",
         purpose: "Personal Project",
-        images: ["Pictures/Updated Resume/Updated Resume.png", "Pictures/Updated Resume/Updated Resume 1.png"],
+        images: ["Pictures/Updated Resume/Updated Resume.png", "Pictures/Updated Resume/Updated Resume 1.png", "Pictures/Updated Resume/Updated Resume 2.png"],
         code: "https://github.com/ChadHarper811/Updated-Resume"
     },
     {
