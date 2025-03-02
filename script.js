@@ -209,7 +209,6 @@ const codingLink = document.getElementById("coding-link");
 const contactLinks = document.getElementById("contactLinks");
 let slideIndex = 1;
 
-
 [launchCodeCert, freeCodeCampRWDCert, freeCodeCampJSADSCert].forEach(
     (span) => {
         span.addEventListener("click", (event) => {

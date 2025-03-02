@@ -155,7 +155,6 @@ P {
     margin: 0px 0px 0px 0px;
 }
 
-
 #modal-container, #gallery-container {
     display: none;
     position: fixed;
@@ -197,14 +196,14 @@ P {
     position: absolute;
     right: 10px;
     top: -40px;
-    color: var(--resume);
+    color: var(--resume-icon);
     font-size: 40px;
     font-weight: bold;
     transition: 0.4s;
 }
 
 .closeBtn:hover, .closeBtn:focus {
-    color: var(--resume-icon);
+    color: var(--resume);
     cursor: pointer;
 }
 
