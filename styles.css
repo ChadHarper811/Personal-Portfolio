@@ -99,6 +99,10 @@ P {
     cursor: pointer;
 }
 
+.certificate:hover {
+    color: var(--orange);
+    transition: .6s ease;
+}
 
 .projects a:link, a:visited {
     color: var(--light_gray);
